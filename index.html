@@ -86,8 +86,13 @@ dialog::backdrop{background:rgba(0,0,0,.82)}
 dialog[open]{animation:dlg .28s cubic-bezier(.2,.7,.2,1)}
 @keyframes dlg{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 .dlg-grid{display:grid;grid-template-columns:1.1fr 1fr}
-.dlg-media{background:var(--raise);display:flex;align-items:center;justify-content:center}
-.dlg-media img{width:100%;height:auto;max-height:calc(100svh - 26px);object-fit:contain}
+.dlg-media{background:var(--raise);display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;min-width:0;overflow:hidden}
+.gallery-main{display:flex;align-items:center;justify-content:center;min-height:180px;background:#050505}
+.gallery-main img{display:block;width:100%;height:auto;max-height:calc(100svh - 190px);object-fit:contain}
+.gallery-thumbs{display:flex;gap:8px;overflow-x:auto;padding:10px;background:#090909;border-top:1px solid var(--line)}
+.gallery-thumb{flex:0 0 76px;width:76px;height:58px;padding:0;border:1px solid var(--line);background:#111;cursor:pointer;opacity:.7;overflow:hidden}
+.gallery-thumb img{display:block;width:100%;height:100%;object-fit:cover}
+.gallery-thumb[aria-pressed="true"],.gallery-thumb:hover{opacity:1;border-color:var(--green)}
 .dlg-body{padding:clamp(22px,3vw,40px)}
 .dlg-body h3{margin:0 0 6px;font-family:var(--display);font-weight:300;font-size:clamp(1.3rem,2.4vw,1.9rem);line-height:1.2}
 .dlg-body .meta{margin:0 0 18px;color:var(--mute)}
@@ -329,8 +334,9 @@ let current = "all";
 const filterDefs = [["all","Tất cả"], ["short","Phim ngắn"], ["tvc","TVC"], ["mv","MV"], ["student","Student film"], ["dev","Dự án phát triển"]];
 function imageSrc(value){
   if(!value) return "";
-  // CMS image fields can store a full path; legacy image keys map to migrated files.
-  if(value.startsWith("/") || value.startsWith("http://") || value.startsWith("https://") || value.startsWith("data:")) return value;
+  if(value.startsWith("http://") || value.startsWith("https://") || value.startsWith("data:")) return value;
+  if(value.startsWith("/")) return value;
+  if(value.startsWith("images/")) return `/${value}`;
   if(IMG[value]) return `/images/${value}.jpg`;
   return value;
 }
@@ -363,11 +369,26 @@ $("#works").addEventListener("click", e => {
 
 /* dialog */
 const dlg = $("#dlg");
+function renderProjectGallery(w){
+  const images = [w.img, ...(Array.isArray(w.gallery) ? w.gallery : [])]
+    .filter(Boolean)
+    .filter((src, index, all) => all.indexOf(src) === index);
+  if(!images.length) return "";
+  const main = images[0];
+  const thumbs = images.length > 1
+    ? `<div class="gallery-thumbs" aria-label="Ảnh trong dự án">${images.map((src, i) =>
+        `<button type="button" class="gallery-thumb" data-gallery-index="${i}" aria-label="Xem ảnh ${i+1}" aria-pressed="${i===0}"><img src="${imageSrc(src)}" alt="" loading="lazy"></button>`
+      ).join("")}</div>`
+    : "";
+  return `<div class="gallery-main"><img id="galleryMainImage" src="${imageSrc(main)}" alt="${esc(w.alt || w.title)}"></div>${thumbs}`;
+}
 function openWork(id){
   const w = WORKS.find(x => x.id === id); if(!w) return;
-  $("#dlgMedia").innerHTML = w.img ? `<img src="${imageSrc(w.img)}" alt="${esc(w.alt)}">` : "";
-  $("#dlgMedia").style.display = w.img ? "flex" : "none";
-  dlg.querySelector(".dlg-grid").style.gridTemplateColumns = w.img ? "" : "1fr";
+  dlg.dataset.workId = w.id;
+  const gallery = [w.img, ...(Array.isArray(w.gallery) ? w.gallery : [])].filter(Boolean);
+  $("#dlgMedia").innerHTML = renderProjectGallery(w);
+  $("#dlgMedia").style.display = gallery.length ? "flex" : "none";
+  dlg.querySelector(".dlg-grid").style.gridTemplateColumns = gallery.length ? "" : "1fr";
   let h = `<h3 id="dlgTitle">${esc(w.title)}</h3><p class="meta">${esc(w.meta)}</p>`;
   if(w.synopsis) h += `<h4>Nội dung</h4><p>${esc(w.synopsis)}</p>`;
   if((w.awards || []).length) h += `<h4>Thành tích</h4><ul>${(w.awards || []).map(a=>`<li>${esc(a)}</li>`).join("")}</ul>`;
@@ -376,6 +397,18 @@ function openWork(id){
   dlg.showModal();
   dlg.scrollTop = 0;
 }
+$("#dlgMedia").addEventListener("click", e => {
+  const button = e.target.closest(".gallery-thumb");
+  if(!button) return;
+  const w = WORKS.find(x => x.id === dlg.dataset.workId);
+  if(!w) return;
+  const images = [w.img, ...(Array.isArray(w.gallery) ? w.gallery : [])].filter(Boolean).filter((src, index, all) => all.indexOf(src) === index);
+  const index = Number(button.dataset.galleryIndex);
+  if(!images[index]) return;
+  const main = $("#galleryMainImage");
+  if(main){ main.src = imageSrc(images[index]); main.alt = `${esc(w.title)} — ảnh ${index+1}`; }
+  $("#dlgMedia").querySelectorAll(".gallery-thumb").forEach((thumb, i) => thumb.setAttribute("aria-pressed", String(i === index)));
+});
 $("#dlgClose").addEventListener("click", () => dlg.close());
 dlg.addEventListener("click", e => { if(e.target === dlg) dlg.close(); });
 
