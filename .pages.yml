@@ -1,0 +1,27 @@
+
+media:
+  input: images
+  output: /images
+
+content:
+  - name: site
+    label: Website Settings
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: site_title
+        label: Site Title
+        type: string
+      - name: tagline
+        label: Tagline
+        type: text
+      - name: hero_title
+        label: Hero Headline
+        type: string
+      - name: hero_description
+        label: Hero Description
+        type: text
+      - name: hero_image
+        label: Hero Image
+        type: image
