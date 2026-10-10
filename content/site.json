@@ -1,6 +1,432 @@
 {
-  "site_title": "CR3W",
-  "tagline": "We're Cr3w, we so crewed",
-  "hero_title": "CR3W",
-  "hero_description": "PHI HÀNH ĐOÀN LÀM PHIM"
+  "site_title": "CREW | Nhóm làm phim Đại học Hoa Sen",
+  "tagline": "CREW là nhóm làm phim trẻ từ ngành Quản trị Công nghệ Truyền thông, Đại học Hoa Sen. Phim ngắn, TVC, MV.",
+  "hero_title": "Nhóm làm phim trẻ từ Đại học Hoa Sen",
+  "hero_description": "Chúng mình đến từ ngành Quản trị Công nghệ Truyền thông, làm phim ngắn, TVC và MV. Phim của CREW đã được chọn chiếu tại NGILNGIG, Jogja-NETPAC và Xinê Xem Short.",
+  "hero_logo_image": "",
+  "mark_image": "",
+  "hero_primary_label": "Xem dự án",
+  "hero_primary_href": "#du-an",
+  "hero_secondary_label": "Liên hệ làm việc",
+  "hero_secondary_href": "#lien-he",
+  "nav_projects": "Dự án",
+  "nav_events": "Thành tích",
+  "nav_members": "Thành viên",
+  "nav_contact": "Liên hệ",
+  "projects_heading": "Dự án",
+  "projects_description": "Bấm vào từng dự án để xem nội dung, thành tích và ê-kíp.",
+  "events_heading": "Thành tích",
+  "events_description": "Các lựa chọn chính thức và giải thưởng từ liên hoan, buổi chiếu và chợ dự án.",
+  "members_heading": "Thành viên",
+  "members_description": "Mỗi người đảm nhiệm nhiều vị trí, tùy dự án.",
+  "contact_heading": "Liên hệ",
+  "contact_description": "Gửi email cho chúng mình về phim, TVC hoặc MV bạn đang chuẩn bị.",
+  "contact_email": "crewproduction.since2022@gmail.com",
+  "contact_phone": "0835 497 479",
+  "contact_phone_href": "+84835497479",
+  "contact_person": "Uyển Thư",
+  "facebook_url": "https://www.facebook.com/crewproduction.2022",
+  "behance_url": "https://www.behance.net/crewproduction",
+  "footer_text": "CREW, nhóm làm phim Đại học Hoa Sen, hoạt động từ 2022.",
+  "section_order": [
+    "hero",
+    "projects",
+    "events",
+    "members",
+    "contact"
+  ],
+  "works": [
+    {
+      "id": "dem",
+      "type": "short",
+      "title": "Đêm giao thừa bên rìa thành phố",
+      "img": "dem",
+      "alt": "Poster phim Đêm giao thừa bên rìa thành phố",
+      "meta": "Phim ngắn",
+      "win": "Best Script, Writing Lab 2",
+      "synopsis": "Trong đêm cuối cùng của năm cũ, một cô sinh viên xa quê chọn ở lại khu trọ vắng vẻ và đón giao thừa một mình. Cô lẻn vào phòng trọ của hàng xóm để khám phá, nhưng gặp phải một biến cố đầy ám ảnh.",
+      "awards": [
+        "Best Script, Writing Lab 2, Spring Auteurs",
+        "Honorable Mention, Hollywood Shorts Fest",
+        "Official Selection, End of Semester Screening 2024 (Hoa Sen, Cinestar)",
+        "Official Selection, Xinê Xem Short 2024"
+      ],
+      "credits": [
+        "Biên kịch, đạo diễn: Nguyễn Lê Uyển Thư",
+        "Producer: Văn Thuận, Nguyễn Lê Uyển Thư",
+        "DOP: Thành Phạm",
+        "Line producer: Thủy Trúc, Đức Anh",
+        "Diễn viên: Hoàng Kim, Minh Thy, Thúy Hà, Wangmin"
+      ]
+    },
+    {
+      "id": "apoc",
+      "type": "short",
+      "title": "How An Apocalypse Ends",
+      "img": "apoc",
+      "alt": "Poster phim How An Apocalypse Ends",
+      "meta": "Phim ngắn, 2025",
+      "win": "Special Mention, CinemaShort 2025",
+      "synopsis": "",
+      "awards": [
+        "Official Selection, Jogja-NETPAC Asian Film Festival 2025",
+        "Special Mention, CinemaShort 2025 Asian Short Film Competition",
+        "Official Selection, NGILNGIG Asian Fantastic Film Festival 2025"
+      ],
+      "credits": [
+        "Biên kịch, đạo diễn: Đặng Thùy Trang",
+        "Producer: Nguyễn Lê Uyển Thư, Phạm Thảo Trang",
+        "DOP, hậu kỳ, DIT, VFX: Trần Hào Khang",
+        "Line producer: Vita, KhanhChamPhay, Đức Anh",
+        "Diễn viên: Nam Trần, Đức Mạnh, Chi Bảo, Trung Nguyên"
+      ]
+    },
+    {
+      "id": "nguoime",
+      "type": "short",
+      "title": "Người Mẹ Của Con Nợ",
+      "img": "nguoime",
+      "alt": "Poster phim Người Mẹ Của Con Nợ",
+      "meta": "Phim ngắn, 2026",
+      "win": "Official Selection, NGILNGIG 2026",
+      "synopsis": "",
+      "awards": [
+        "Official Selection, NGILNGIG Asian Fantastic Film Festival 2026"
+      ],
+      "credits": [
+        "Đạo diễn, dựng phim: Lê Thiện Trung",
+        "Producer, biên kịch: Nguyễn Lê Uyển Thư",
+        "DOP: Hào Khang",
+        "Line producer: KhanhChamPhay, Vita, Đức Anh",
+        "Diễn viên: Hoàng Kim, Kim Loan, Chí Nguyễn"
+      ]
+    },
+    {
+      "id": "upmood",
+      "type": "tvc",
+      "title": "UpMood with McDonald's",
+      "img": "upmood",
+      "alt": "Cảnh trong TVC UpMood with McDonald's: nhóm bạn trẻ ăn cùng nhau",
+      "meta": "TVC, 0:39",
+      "win": "Best TVC picked by Brand, EOS Summer 2023",
+      "synopsis": "Một nhóm học sinh cấp 3, một cặp đôi và một nhân viên văn phòng trở nên vui vẻ hơn sau khi dùng bữa tại McDonald's.",
+      "awards": [
+        "Best TVC picked by Brand, EOS Summer 2023 (Hoa Sen tổ chức, chiếu tại BHD Cinema)"
+      ],
+      "credits": []
+    },
+    {
+      "id": "vans",
+      "type": "tvc",
+      "title": "Always Pushing, Vans TVC",
+      "img": "vans",
+      "alt": "Cảnh trong TVC Always Pushing: góc quay mắt cá nhìn lên tòa nhà",
+      "meta": "TVC, 1:07",
+      "win": "Vans Việt Nam tài trợ sản phẩm",
+      "synopsis": "Một nhóm học sinh cấp 3 chơi trượt ván cùng nhau ở nhiều địa hình tại Sài Gòn.",
+      "awards": [
+        "Sản phẩm được Vans Việt Nam tài trợ"
+      ],
+      "credits": [
+        "Producer: Phạm Thảo Trang"
+      ]
+    },
+    {
+      "id": "nhinlai",
+      "type": "mv",
+      "title": "Nhìn Lại",
+      "img": "nhinlai",
+      "alt": "Cảnh trong MV Nhìn Lại: hai học sinh ngồi bên cửa sổ",
+      "meta": "MV, 4:47",
+      "win": "4.923 lượt xem",
+      "synopsis": "Một nữ học sinh luôn âm thầm đi theo bảo vệ cậu bạn học sinh của mình tại trường học cũ của họ.",
+      "awards": [
+        "199 lượt thích, 4.923 lượt xem"
+      ],
+      "credits": []
+    },
+    {
+      "id": "luckycharm",
+      "type": "mv",
+      "title": "Lucky Charm",
+      "img": "luckycharm",
+      "alt": "Cảnh trong MV Lucky Charm: cô gái giữa nhà tắm đầy hoa màu tím",
+      "meta": "MV, 3:37",
+      "win": "4.204 lượt xem",
+      "synopsis": "Một cô gái vui vẻ ca hát, vibing trong nhà tắm lộn xộn, nhiều màu sắc, nơi đại diện cho thế giới tâm hồn của cô khi chìm vào tình yêu.",
+      "awards": [
+        "131 lượt thích, 4.204 lượt xem"
+      ],
+      "credits": []
+    },
+    {
+      "id": "vach",
+      "type": "short",
+      "title": "Vạch",
+      "img": "vach",
+      "alt": "Cảnh trong phim Vạch: cận chân và giày",
+      "meta": "Phim ngắn, 2022",
+      "win": "Chọn chiếu tại Xinê Xem Short 2024",
+      "synopsis": "Một nữ sinh cấp ba gương mẫu tìm cách thử thai tại trường học. Đây là phim ngắn đầu tay của đạo diễn Đặng Thùy Trang.",
+      "awards": [
+        "Official Selection, End of Semester Screening 2022 (Hoa Sen, CGV Cinema)",
+        "Official Selection, Xinê Xem Short 2024 (Xinê House)"
+      ],
+      "credits": [
+        "Đạo diễn: Đặng Thùy Trang",
+        "DOP: Trần Hào Khang"
+      ]
+    },
+    {
+      "id": "manocanh",
+      "type": "short",
+      "title": "Ma nơ canh",
+      "img": "manocanh",
+      "alt": "Cảnh trong phim Ma nơ canh: cô gái ngồi làm bài bên ma nơ canh",
+      "meta": "Phim ngắn",
+      "win": "Chọn chiếu tại Tiệc phim ngắn Lagi 2024",
+      "synopsis": "Một cô sinh viên thiết kế thời trang cố gắng hoàn thành bài tập của mình nhưng liên tục bị quấy phá bởi một thế lực bí ẩn đến từ căn phòng không được sử dụng của nhà trọ.",
+      "awards": [
+        "Official Selection, Tiệc phim ngắn Lagi 2024 (Trigger Film Academy)"
+      ],
+      "credits": [
+        "Giám đốc sản xuất, đạo diễn: Nguyễn Lê Uyển Thư"
+      ]
+    },
+    {
+      "id": "baddate",
+      "type": "short",
+      "title": "Bad Date",
+      "img": "baddate",
+      "alt": "Cảnh trong phim Bad Date: ánh đỏ và bóng quái vật",
+      "meta": "Phim ngắn",
+      "win": "Chọn chiếu tại Xinê Xem Short 2024",
+      "synopsis": "Trong một căn phòng BDSM tại khách sạn tình yêu, chúng ta thấy xác của người bạn trai nằm trên giường, bên cạnh anh là một con quái vật đang gào rú. Nấp sau chiếc ghế tình yêu là cô bạn gái run rẩy và sợ hãi.",
+      "awards": [
+        "Official Selection, End of Semester Screening 2022 (Hoa Sen, CGV Cinema)",
+        "Official Selection, Tiệc phim ngắn Lagi 2024 (Trigger Film Academy)",
+        "Official Selection, Xinê Xem Short 2024 (Xinê House)"
+      ],
+      "credits": [
+        "Đạo diễn: Trần Hào Khang"
+      ]
+    },
+    {
+      "id": "caduyen",
+      "type": "short",
+      "title": "Cầu Duyên",
+      "img": null,
+      "meta": "Phim ngắn",
+      "win": "Best Short Script, EOS Summer 2023",
+      "synopsis": "",
+      "awards": [
+        "Best Short Script, EOS Summer 2023"
+      ],
+      "credits": [
+        "Sản xuất: Phạm Thảo Trang"
+      ]
+    },
+    {
+      "id": "taolao",
+      "type": "student",
+      "title": "Oneshot “Chuyện tào lao”",
+      "img": "taolao",
+      "alt": "Cảnh trong oneshot Chuyện tào lao: cặp đôi hôn nhau trong quán cà phê",
+      "meta": "Student film",
+      "win": "",
+      "synopsis": "Một cặp đôi bàn bạc về việc cướp quán cà phê mà họ đang ngồi bên trong. Đây là một phân đoạn remake từ cảnh phim Pulp Fiction của Quentin Tarantino.",
+      "awards": [],
+      "credits": []
+    },
+    {
+      "id": "vutru",
+      "type": "student",
+      "title": "Oneshot “Trong một vũ trụ khác”",
+      "img": "vutru",
+      "alt": "Cảnh trong oneshot Trong một vũ trụ khác: cô gái bên bể cá",
+      "meta": "Student film",
+      "win": "",
+      "synopsis": "Trong một vũ trụ người nhện nào đó tại Việt Nam, Quyên, người được chọn để trở thành spider-girl của vũ trụ này, có một cuộc đối thoại trực tiếp với người ba cảnh sát của mình về những nỗi uất ức trong lòng cô. Đây là một phân đoạn remake từ cảnh phim Spider-Man: Across the Spider-Verse của Sony Pictures.",
+      "awards": [],
+      "credits": []
+    },
+    {
+      "id": "nhachungchu",
+      "type": "dev",
+      "title": "Nhà Chung Chủ",
+      "img": null,
+      "meta": "Dự án phim",
+      "win": "Top 7 tại Chợ Dự án Lagi 2024",
+      "synopsis": "",
+      "awards": [
+        "Top 7 dự án, Chợ Dự án Lagi 2024"
+      ],
+      "credits": [
+        "Biên kịch, đạo diễn: Đặng Thùy Trang",
+        "Sản xuất: Nguyễn Lê Uyển Thư"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "e": "NGILNGIG Asian Fantastic Film Festival",
+      "items": [
+        {
+          "title": "Người Mẹ Của Con Nợ, 2026",
+          "result": "Official Selection"
+        },
+        {
+          "title": "How An Apocalypse Ends, 2025",
+          "result": "Official Selection"
+        }
+      ]
+    },
+    {
+      "e": "Jogja-NETPAC Asian Film Festival 2025",
+      "items": [
+        {
+          "title": "How An Apocalypse Ends",
+          "result": "Official Selection"
+        }
+      ]
+    },
+    {
+      "e": "CinemaShort Asian Short Film Competition 2025",
+      "items": [
+        {
+          "title": "How An Apocalypse Ends",
+          "result": "Special Mention"
+        }
+      ]
+    },
+    {
+      "e": "Hollywood Shorts Fest",
+      "items": [
+        {
+          "title": "Đêm giao thừa bên rìa thành phố",
+          "result": "Honorable Mention"
+        }
+      ]
+    },
+    {
+      "e": "Writing Lab 2, Spring Auteurs",
+      "items": [
+        {
+          "title": "Đêm giao thừa bên rìa thành phố",
+          "result": "Best Script"
+        }
+      ]
+    },
+    {
+      "e": "Xinê Xem Short 2024",
+      "items": [
+        {
+          "title": "Vạch",
+          "result": "Official Selection"
+        },
+        {
+          "title": "Bad Date",
+          "result": "Official Selection"
+        },
+        {
+          "title": "Đêm giao thừa bên rìa thành phố",
+          "result": "Official Selection"
+        }
+      ]
+    },
+    {
+      "e": "Tiệc phim ngắn Lagi 2024",
+      "items": [
+        {
+          "title": "Ma nơ canh",
+          "result": "Official Selection"
+        },
+        {
+          "title": "Bad Date",
+          "result": "Official Selection"
+        }
+      ]
+    },
+    {
+      "e": "Chợ Dự án Lagi 2024",
+      "items": [
+        {
+          "title": "Nhà Chung Chủ",
+          "result": "Top 7 dự án"
+        }
+      ]
+    },
+    {
+      "e": "EOS Summer 2023",
+      "items": [
+        {
+          "title": "UpMood with McDonald's",
+          "result": "Best TVC picked by Brand"
+        },
+        {
+          "title": "Cầu Duyên",
+          "result": "Best Short Script"
+        }
+      ]
+    },
+    {
+      "e": "End of Semester Screening, Hoa Sen",
+      "items": [
+        {
+          "title": "Đêm giao thừa bên rìa thành phố, 2024",
+          "result": "Official Selection"
+        },
+        {
+          "title": "Vạch, 2022",
+          "result": "Official Selection"
+        },
+        {
+          "title": "Bad Date, 2022",
+          "result": "Official Selection"
+        }
+      ]
+    }
+  ],
+  "members": [
+    {
+      "n": "Nguyễn Lê Uyển Thư",
+      "r": "Biên kịch, đạo diễn, producer, trợ lý đạo diễn 1",
+      "b": "Sinh viên Quản trị Công nghệ Truyền thông, Hoa Sen. Làm phim ngắn, TVC và dự án thương mại cho ClickMedia Agency."
+    },
+    {
+      "n": "Đặng Thùy Trang",
+      "r": "Biên kịch, đạo diễn, trợ lý đạo diễn 1, dựng phim",
+      "b": "Đạo diễn trẻ với phim ngắn đầu tay Vạch (2022), có kinh nghiệm làm phim ngắn, MV và TVC."
+    },
+    {
+      "n": "Trần Hào Khang",
+      "r": "Đạo diễn, DOP, camera operator, dựng phim, colorist",
+      "b": "Freelancer cho phim ngắn, TVC và phim điện ảnh. Từng làm camera, dựng cho các video WeChoice Awards 2024."
+    },
+    {
+      "n": "Phạm Thảo Trang",
+      "r": "Producer, line producer, project manager, trợ lý sản xuất, nhiếp ảnh hậu trường",
+      "b": "Sản xuất TVC Always Pushing và phim ngắn Cầu Duyên."
+    },
+    {
+      "n": "Nguyễn Lan Vy",
+      "r": "Producer, line producer, project manager, trợ lý sản xuất, mỹ thuật",
+      "b": "Thường xuyên phụ trách sản xuất và hỗ trợ tổ mỹ thuật trong các dự án của CREW."
+    },
+    {
+      "n": "Nguyễn Quốc Khánh",
+      "r": "Producer, line producer, project manager, trợ lý sản xuất",
+      "b": "Cộng tác viên của Xinê House, lên kế hoạch và sắp xếp lịch trình cho team Program."
+    },
+    {
+      "n": "Nguyễn Phúc Hậu",
+      "r": "Thu âm hiện trường, hậu kỳ âm thanh, gaffer, AC, set design",
+      "b": "Từng thu âm hiện trường cho các clip của We Choice Awards 2023."
+    },
+    {
+      "n": "Trương Minh Chánh",
+      "r": "Trợ lý đạo diễn 1",
+      "b": "Freelancer trợ lý đạo diễn cho phim ngắn và phim điện ảnh."
+    }
+  ]
 }
