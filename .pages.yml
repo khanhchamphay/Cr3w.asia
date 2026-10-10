@@ -135,9 +135,9 @@ content:
             type: string
             required: true
           - name: img
-            label: Existing Image Key
-            type: string
-            description: Keep unchanged for now. Current artwork is embedded in the HTML as Base64; image uploads will be migrated separately.
+            label: Project Poster / Image
+            type: image
+            description: Upload or select the project's poster. Use the existing poster unless you intend to replace it.
           - name: alt
             label: Image Alt Text
             type: string
