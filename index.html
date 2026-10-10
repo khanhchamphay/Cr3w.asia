@@ -327,6 +327,14 @@ $("#heroLogo").src = IMG.logo;
 /* filters */
 let current = "all";
 const filterDefs = [["all","Tất cả"], ["short","Phim ngắn"], ["tvc","TVC"], ["mv","MV"], ["student","Student film"], ["dev","Dự án phát triển"]];
+function imageSrc(value){
+  if(!value) return "";
+  // CMS image fields can store a full path; legacy image keys map to migrated files.
+  if(value.startsWith("/") || value.startsWith("http://") || value.startsWith("https://") || value.startsWith("data:")) return value;
+  if(IMG[value]) return `/images/${value}.jpg`;
+  return value;
+}
+
 function renderFilters(){
   $("#filters").innerHTML = filterDefs.map(([k,l]) =>
     `<button type="button" data-k="${k}" aria-pressed="${k===current}">${l}</button>`).join("");
@@ -341,7 +349,7 @@ function renderWorks(){
   const list = WORKS.filter(w => current === "all" || w.type === current);
   $("#works").innerHTML = list.map(w => {
     const visual = w.img
-      ? `<div class="frame"><img src="${IMG[w.img]}" alt="${esc(w.alt)}" loading="lazy"></div>`
+      ? `<div class="frame"><img src="${imageSrc(w.img)}" alt="${esc(w.alt)}" loading="lazy"></div>`
       : `<div class="txt-card"><b>${esc(w.title)}</b><span>${esc(w.meta)}</span></div>`;
     const head = w.img ? `<h3>${esc(w.title)}</h3>` : "";
     const meta = w.img ? `<p class="meta">${esc(w.meta)}</p>` : "";
@@ -357,7 +365,7 @@ $("#works").addEventListener("click", e => {
 const dlg = $("#dlg");
 function openWork(id){
   const w = WORKS.find(x => x.id === id); if(!w) return;
-  $("#dlgMedia").innerHTML = w.img ? `<img src="${IMG[w.img]}" alt="${esc(w.alt)}">` : "";
+  $("#dlgMedia").innerHTML = w.img ? `<img src="${imageSrc(w.img)}" alt="${esc(w.alt)}">` : "";
   $("#dlgMedia").style.display = w.img ? "flex" : "none";
   dlg.querySelector(".dlg-grid").style.gridTemplateColumns = w.img ? "" : "1fr";
   let h = `<h3 id="dlgTitle">${esc(w.title)}</h3><p class="meta">${esc(w.meta)}</p>`;
