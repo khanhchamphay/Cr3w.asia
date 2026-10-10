@@ -126,6 +126,10 @@ content:
                   label: TVC
                 - name: mv
                   label: Music Video
+                - name: student
+                  label: Student Film
+                - name: dev
+                  label: Development Project
           - name: title
             label: Project Title
             type: string
