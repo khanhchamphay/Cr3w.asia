@@ -35,6 +35,27 @@
   ],
   "works": [
     {
+      "id": "apoc",
+      "type": "short",
+      "title": "How An Apocalypse Ends",
+      "img": "apoc",
+      "alt": "Poster phim How An Apocalypse Ends",
+      "meta": "Phim ngắn, 2025 - CMS TEST",
+      "win": "Special Mention, CinemaShort 2025",
+      "awards": [
+        "Official Selection, Jogja-NETPAC Asian Film Festival 2025",
+        "Special Mention, CinemaShort 2025 Asian Short Film Competition",
+        "Official Selection, NGILNGIG Asian Fantastic Film Festival 2025"
+      ],
+      "credits": [
+        "Biên kịch, đạo diễn: Đặng Thùy Trang",
+        "Producer: Nguyễn Lê Uyển Thư, Phạm Thảo Trang",
+        "DOP, hậu kỳ, DIT, VFX: Trần Hào Khang",
+        "Line producer: Vita, KhanhChamPhay, Đức Anh",
+        "Diễn viên: Nam Trần, Đức Mạnh, Chi Bảo, Trung Nguyên"
+      ]
+    },
+    {
       "id": "dem",
       "type": "short",
       "title": "Đêm giao thừa bên rìa thành phố",
@@ -55,27 +76,6 @@
         "DOP: Thành Phạm",
         "Line producer: Thủy Trúc, Đức Anh",
         "Diễn viên: Hoàng Kim, Minh Thy, Thúy Hà, Wangmin"
-      ]
-    },
-    {
-      "id": "apoc",
-      "type": "short",
-      "title": "How An Apocalypse Ends",
-      "img": "apoc",
-      "alt": "Poster phim How An Apocalypse Ends",
-      "meta": "Phim ngắn, 2025",
-      "win": "Special Mention, CinemaShort 2025",
-      "awards": [
-        "Official Selection, Jogja-NETPAC Asian Film Festival 2025",
-        "Special Mention, CinemaShort 2025 Asian Short Film Competition",
-        "Official Selection, NGILNGIG Asian Fantastic Film Festival 2025"
-      ],
-      "credits": [
-        "Biên kịch, đạo diễn: Đặng Thùy Trang",
-        "Producer: Nguyễn Lê Uyển Thư, Phạm Thảo Trang",
-        "DOP, hậu kỳ, DIT, VFX: Trần Hào Khang",
-        "Line producer: Vita, KhanhChamPhay, Đức Anh",
-        "Diễn viên: Nam Trần, Đức Mạnh, Chi Bảo, Trung Nguyên"
       ]
     },
     {
