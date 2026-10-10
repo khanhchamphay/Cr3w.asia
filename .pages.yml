@@ -138,6 +138,13 @@ content:
             label: Project Poster / Image
             type: image
             description: Upload or select the project's poster. Use the existing poster unless you intend to replace it.
+          - name: gallery
+            label: Project Gallery Images
+            type: image
+            list:
+              collapsible:
+                collapsed: true
+            description: Upload additional stills, behind-the-scenes photos, or festival images. The poster remains the main image; gallery images appear as clickable thumbnails in the project detail.
           - name: alt
             label: Image Alt Text
             type: string
