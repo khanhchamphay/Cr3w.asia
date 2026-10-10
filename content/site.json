@@ -38,7 +38,12 @@
       "id": "apoc",
       "type": "short",
       "title": "How An Apocalypse Ends",
-      "img": "/images/apocvff.jpg",
+      "img": "/images/apoc-1.jpg",
+      "gallery": [
+        "/images/apocff.jpg",
+        "/images/apocml.jpg",
+        "/images/apocvff-1.jpg"
+      ],
       "alt": "Poster phim How An Apocalypse Ends",
       "meta": "Phim ngắn, 2025",
       "win": "Special Mention, CinemaShort 2025",
