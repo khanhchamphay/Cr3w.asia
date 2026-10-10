@@ -1,10 +1,8 @@
 {
   "site_title": "CREW | Nhóm làm phim Đại học Hoa Sen",
-  "tagline": "CREW là nhóm làm phim trẻ từ ngành Quản trị Công nghệ Truyền thông, Đại học Hoa Sen. Phim ngắn, TVC, MV.",
+  "tagline": "PHI HÀNH ĐOÀN LÀM PHIM",
   "hero_title": "Nhóm làm phim trẻ từ Đại học Hoa Sen",
   "hero_description": "Chúng mình đến từ ngành Quản trị Công nghệ Truyền thông, làm phim ngắn, TVC và MV. Phim của CREW đã được chọn chiếu tại NGILNGIG, Jogja-NETPAC và Xinê Xem Short.",
-  "hero_logo_image": "",
-  "mark_image": "",
   "hero_primary_label": "Xem dự án",
   "hero_primary_href": "#du-an",
   "hero_secondary_label": "Liên hệ làm việc",
@@ -67,7 +65,6 @@
       "alt": "Poster phim How An Apocalypse Ends",
       "meta": "Phim ngắn, 2025",
       "win": "Special Mention, CinemaShort 2025",
-      "synopsis": "",
       "awards": [
         "Official Selection, Jogja-NETPAC Asian Film Festival 2025",
         "Special Mention, CinemaShort 2025 Asian Short Film Competition",
@@ -89,7 +86,6 @@
       "alt": "Poster phim Người Mẹ Của Con Nợ",
       "meta": "Phim ngắn, 2026",
       "win": "Official Selection, NGILNGIG 2026",
-      "synopsis": "",
       "awards": [
         "Official Selection, NGILNGIG Asian Fantastic Film Festival 2026"
       ],
@@ -112,8 +108,7 @@
       "synopsis": "Một nhóm học sinh cấp 3, một cặp đôi và một nhân viên văn phòng trở nên vui vẻ hơn sau khi dùng bữa tại McDonald's.",
       "awards": [
         "Best TVC picked by Brand, EOS Summer 2023 (Hoa Sen tổ chức, chiếu tại BHD Cinema)"
-      ],
-      "credits": []
+      ]
     },
     {
       "id": "vans",
@@ -142,8 +137,7 @@
       "synopsis": "Một nữ học sinh luôn âm thầm đi theo bảo vệ cậu bạn học sinh của mình tại trường học cũ của họ.",
       "awards": [
         "199 lượt thích, 4.923 lượt xem"
-      ],
-      "credits": []
+      ]
     },
     {
       "id": "luckycharm",
@@ -156,8 +150,7 @@
       "synopsis": "Một cô gái vui vẻ ca hát, vibing trong nhà tắm lộn xộn, nhiều màu sắc, nơi đại diện cho thế giới tâm hồn của cô khi chìm vào tình yêu.",
       "awards": [
         "131 lượt thích, 4.204 lượt xem"
-      ],
-      "credits": []
+      ]
     },
     {
       "id": "vach",
@@ -215,10 +208,8 @@
       "id": "caduyen",
       "type": "short",
       "title": "Cầu Duyên",
-      "img": null,
       "meta": "Phim ngắn",
       "win": "Best Short Script, EOS Summer 2023",
-      "synopsis": "",
       "awards": [
         "Best Short Script, EOS Summer 2023"
       ],
@@ -233,10 +224,7 @@
       "img": "taolao",
       "alt": "Cảnh trong oneshot Chuyện tào lao: cặp đôi hôn nhau trong quán cà phê",
       "meta": "Student film",
-      "win": "",
-      "synopsis": "Một cặp đôi bàn bạc về việc cướp quán cà phê mà họ đang ngồi bên trong. Đây là một phân đoạn remake từ cảnh phim Pulp Fiction của Quentin Tarantino.",
-      "awards": [],
-      "credits": []
+      "synopsis": "Một cặp đôi bàn bạc về việc cướp quán cà phê mà họ đang ngồi bên trong. Đây là một phân đoạn remake từ cảnh phim Pulp Fiction của Quentin Tarantino."
     },
     {
       "id": "vutru",
@@ -245,19 +233,14 @@
       "img": "vutru",
       "alt": "Cảnh trong oneshot Trong một vũ trụ khác: cô gái bên bể cá",
       "meta": "Student film",
-      "win": "",
-      "synopsis": "Trong một vũ trụ người nhện nào đó tại Việt Nam, Quyên, người được chọn để trở thành spider-girl của vũ trụ này, có một cuộc đối thoại trực tiếp với người ba cảnh sát của mình về những nỗi uất ức trong lòng cô. Đây là một phân đoạn remake từ cảnh phim Spider-Man: Across the Spider-Verse của Sony Pictures.",
-      "awards": [],
-      "credits": []
+      "synopsis": "Trong một vũ trụ người nhện nào đó tại Việt Nam, Quyên, người được chọn để trở thành spider-girl của vũ trụ này, có một cuộc đối thoại trực tiếp với người ba cảnh sát của mình về những nỗi uất ức trong lòng cô. Đây là một phân đoạn remake từ cảnh phim Spider-Man: Across the Spider-Verse của Sony Pictures."
     },
     {
       "id": "nhachungchu",
       "type": "dev",
       "title": "Nhà Chung Chủ",
-      "img": null,
       "meta": "Dự án phim",
       "win": "Top 7 tại Chợ Dự án Lagi 2024",
-      "synopsis": "",
       "awards": [
         "Top 7 dự án, Chợ Dự án Lagi 2024"
       ],
