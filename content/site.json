@@ -210,19 +210,6 @@
       ]
     },
     {
-      "id": "caduyen",
-      "type": "short",
-      "title": "Cầu Duyên",
-      "meta": "Phim ngắn",
-      "win": "Best Short Script, EOS Summer 2023",
-      "awards": [
-        "Best Short Script, EOS Summer 2023"
-      ],
-      "credits": [
-        "Sản xuất: Phạm Thảo Trang"
-      ]
-    },
-    {
       "id": "taolao",
       "type": "student",
       "title": "Oneshot “Chuyện tào lao”",
@@ -239,20 +226,6 @@
       "alt": "Cảnh trong oneshot Trong một vũ trụ khác: cô gái bên bể cá",
       "meta": "Student film",
       "synopsis": "Trong một vũ trụ người nhện nào đó tại Việt Nam, Quyên, người được chọn để trở thành spider-girl của vũ trụ này, có một cuộc đối thoại trực tiếp với người ba cảnh sát của mình về những nỗi uất ức trong lòng cô. Đây là một phân đoạn remake từ cảnh phim Spider-Man: Across the Spider-Verse của Sony Pictures."
-    },
-    {
-      "id": "nhachungchu",
-      "type": "dev",
-      "title": "Nhà Chung Chủ",
-      "meta": "Dự án phim",
-      "win": "Top 7 tại Chợ Dự án Lagi 2024",
-      "awards": [
-        "Top 7 dự án, Chợ Dự án Lagi 2024"
-      ],
-      "credits": [
-        "Biên kịch, đạo diễn: Đặng Thùy Trang",
-        "Sản xuất: Nguyễn Lê Uyển Thư"
-      ]
     }
   ],
   "events": [
