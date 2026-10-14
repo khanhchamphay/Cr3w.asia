@@ -211,3 +211,212 @@ content:
           - name: b
             label: Bio
             type: text
+
+  - name: site_en
+    label: English Website Settings
+    type: file
+    path: content/site.en.json
+    format: json
+    fields:
+      - name: site_title
+        label: SEO / Browser Title
+        type: string
+      - name: tagline
+        label: SEO Description
+        type: text
+      - name: hero_title
+        label: Hero Headline
+        type: string
+      - name: hero_description
+        label: Hero Description
+        type: text
+      - name: hero_logo_image
+        label: Hero Logo Image (optional; migration later)
+        type: image
+      - name: mark_image
+        label: Header Mark Image (optional; migration later)
+        type: image
+      - name: hero_primary_label
+        label: Primary Button Label
+        type: string
+      - name: hero_primary_href
+        label: Primary Button Link
+        type: string
+      - name: hero_secondary_label
+        label: Secondary Button Label
+        type: string
+      - name: hero_secondary_href
+        label: Secondary Button Link
+        type: string
+      - name: nav_projects
+        label: Navigation - Projects
+        type: string
+      - name: nav_events
+        label: Navigation - Achievements
+        type: string
+      - name: nav_members
+        label: Navigation - Members
+        type: string
+      - name: nav_contact
+        label: Navigation - Contact
+        type: string
+      - name: projects_heading
+        label: Projects Section Heading
+        type: string
+      - name: projects_description
+        label: Projects Section Description
+        type: text
+      - name: events_heading
+        label: Achievements Section Heading
+        type: string
+      - name: events_description
+        label: Achievements Section Description
+        type: text
+      - name: members_heading
+        label: Members Section Heading
+        type: string
+      - name: members_description
+        label: Members Section Description
+        type: text
+      - name: contact_heading
+        label: Contact Section Heading
+        type: string
+      - name: contact_description
+        label: Contact Section Description
+        type: text
+      - name: contact_email
+        label: Contact Email
+        type: string
+      - name: contact_phone
+        label: Contact Phone Display
+        type: string
+      - name: contact_phone_href
+        label: Contact Phone Link
+        type: string
+      - name: contact_person
+        label: Contact Person
+        type: string
+      - name: facebook_url
+        label: Facebook URL
+        type: string
+      - name: behance_url
+        label: Behance URL
+        type: string
+      - name: footer_text
+        label: Footer Text
+        type: text
+      - name: section_order
+        label: Section Order (frontend support required)
+        type: string
+        list:
+          min: 1
+          collapsible: true
+        description: Keep values as hero, projects, events, members, contact. Reordering takes effect after the HTML is connected to this field.
+      - name: works
+        label: Projects
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: id
+            label: Internal ID
+            type: string
+            required: true
+          - name: type
+            label: Category (short, tvc, mv)
+            type: select
+            options:
+              values:
+                - name: short
+                  label: Short Film
+                - name: tvc
+                  label: TVC
+                - name: mv
+                  label: Music Video
+                - name: student
+                  label: Student Film
+                - name: dev
+                  label: Development Project
+          - name: title
+            label: Project Title
+            type: string
+            required: true
+          - name: img
+            label: Project Poster / Image
+            type: image
+            description: Upload or select the project's poster. Use the existing poster unless you intend to replace it.
+          - name: gallery
+            label: Project Gallery Images
+            type: image
+            list:
+              collapsible:
+                collapsed: true
+            description: Upload additional stills, behind-the-scenes photos, or festival images. The poster remains the main image; gallery images appear as clickable thumbnails in the project detail.
+          - name: alt
+            label: Image Alt Text
+            type: string
+          - name: meta
+            label: Project Meta
+            type: string
+          - name: win
+            label: Award / Highlight
+            type: string
+          - name: synopsis
+            label: Synopsis
+            type: text
+          - name: awards
+            label: Awards and Selections
+            type: string
+            list:
+              collapsible: true
+          - name: credits
+            label: Credits
+            type: string
+            list:
+              collapsible: true
+      - name: events
+        label: Achievements and Festivals
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{e}"
+        fields:
+          - name: e
+            label: Festival / Event
+            type: string
+            required: true
+          - name: items
+            label: Results
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - name: title
+                label: Project / Result Title
+                type: string
+              - name: result
+                label: Selection / Award
+                type: string
+      - name: members
+        label: Members
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{n}"
+        fields:
+          - name: n
+            label: Full Name
+            type: string
+            required: true
+          - name: r
+            label: Roles
+            type: text
+          - name: b
+            label: Bio
+            type: text
