@@ -1,0 +1,388 @@
+{
+  "site_title": "CREW | Hoa Sen University Film Collective",
+  "tagline": "CREW is a young film collective from Hoa Sen University’s Media Technology Management program, producing short films, commercials, and music videos.",
+  "hero_title": "A young film collective from Hoa Sen University",
+  "hero_description": "We are students from the Media Technology Management program, creating short films, commercials, and music videos. CREW films have been selected by NGILNGIG, Jogja-NETPAC, and Xinê Xem Short.",
+  "hero_primary_label": "Explore projects",
+  "hero_primary_href": "#du-an",
+  "hero_secondary_label": "Work with us",
+  "hero_secondary_href": "#lien-he",
+  "nav_projects": "Projects",
+  "nav_events": "Recognition",
+  "nav_members": "Members",
+  "nav_contact": "Contact",
+  "projects_heading": "Projects",
+  "projects_description": "Select a project to explore its synopsis, recognition, and crew.",
+  "events_heading": "Recognition",
+  "events_description": "Official selections and awards from festivals, screenings, and project markets.",
+  "members_heading": "Members",
+  "members_description": "Each member takes on different roles depending on the project.",
+  "contact_heading": "Contact",
+  "contact_description": "Email us about a short film, commercial, or music video you are developing.",
+  "contact_email": "crewproduction.since2022@gmail.com",
+  "contact_phone": "0835 497 479",
+  "contact_phone_href": "+84835497479",
+  "contact_person": "Uyển Thư",
+  "facebook_url": "https://www.facebook.com/crewproduction.2022",
+  "behance_url": "https://www.behance.net/crewproduction",
+  "footer_text": "CREW is the film collective of Hoa Sen University, active since 2022.",
+  "section_order": [
+    "hero",
+    "projects",
+    "events",
+    "members",
+    "contact"
+  ],
+  "works": [
+    {
+      "id": "apoc",
+      "type": "short",
+      "title": "How An Apocalypse Ends",
+      "img": "/images/apoc-1.jpg",
+      "gallery": [
+        "/images/apocff.jpg",
+        "/images/apocml.jpg",
+        "/images/apocvff-1.jpg"
+      ],
+      "alt": "Poster for How An Apocalypse Ends",
+      "meta": "Short film, 2025",
+      "win": "Special Mention, CinemaShort 2025",
+      "awards": [
+        "Official Selection, Jogja-NETPAC Asian Film Festival 2025",
+        "Special Mention, CinemaShort 2025 Asian Short Film Competition",
+        "Official Selection, NGILNGIG Asian Fantastic Film Festival 2025"
+      ],
+      "credits": [
+        "Writer, Director: Đặng Thùy Trang",
+        "Producer: Nguyễn Lê Uyển Thư, Phạm Thảo Trang",
+        "DOP, Post-production, DIT, VFX: Trần Hào Khang",
+        "Line Producers: Vita, KhanhChamPhay, Đức Anh",
+        "Cast: Nam Trần, Đức Mạnh, Chi Bảo, Trung Nguyên"
+      ]
+    },
+    {
+      "id": "dem",
+      "type": "short",
+      "title": "New Year’s Eve on the Edge of the City",
+      "img": "/images/dem.jpg",
+      "alt": "Poster for New Year’s Eve on the Edge of the City",
+      "meta": "Short film",
+      "win": "Best Script, Writing Lab 2",
+      "synopsis": "On the final night of the year, a student living far from home stays behind in a deserted boarding house to spend New Year’s Eve alone. She sneaks into a neighbour’s room to explore, but encounters a haunting incident.",
+      "awards": [
+        "Best Script, Writing Lab 2, Spring Auteurs",
+        "Honorable Mention, Hollywood Shorts Fest",
+        "Official Selection, End of Semester Screening 2024 (Hoa Sen, Cinestar)",
+        "Official Selection, Xinê Xem Short 2024"
+      ],
+      "credits": [
+        "Writer, Director: Nguyễn Lê Uyển Thư",
+        "Producers: Văn Thuận, Nguyễn Lê Uyển Thư",
+        "DOP: Thành Phạm",
+        "Line Producers: Thủy Trúc, Đức Anh",
+        "Cast: Hoàng Kim, Minh Thy, Thúy Hà, Wangmin"
+      ]
+    },
+    {
+      "id": "nguoime",
+      "type": "short",
+      "title": "The Mother of a Debtor",
+      "img": "/images/nguoime.jpg",
+      "alt": "Poster for The Mother of a Debtor",
+      "meta": "Short film, 2026",
+      "win": "Official Selection, NGILNGIG 2026",
+      "awards": [
+        "Official Selection, NGILNGIG Asian Fantastic Film Festival 2026"
+      ],
+      "credits": [
+        "Director, Editor: Lê Thiện Trung",
+        "Producer, Writer: Nguyễn Lê Uyển Thư",
+        "DOP: Hào Khang",
+        "Line Producers: KhanhChamPhay, Vita, Đức Anh",
+        "Cast: Hoàng Kim, Kim Loan, Chí Nguyễn"
+      ]
+    },
+    {
+      "id": "upmood",
+      "type": "tvc",
+      "title": "UpMood with McDonald's",
+      "img": "/images/upmood.jpg",
+      "alt": "A scene from the UpMood with McDonald’s commercial, featuring a group of friends eating together",
+      "meta": "Commercial, 0:39",
+      "win": "Best TVC picked by Brand, EOS Summer 2023",
+      "synopsis": "A group of high school students, a couple, and an office worker feel happier after sharing a meal at McDonald’s.",
+      "awards": [
+        "Best TVC picked by Brand, EOS Summer 2023 (organized by Hoa Sen; screened at BHD Cinema)"
+      ]
+    },
+    {
+      "id": "vans",
+      "type": "tvc",
+      "title": "Always Pushing, Vans TVC",
+      "img": "/images/vans.jpg",
+      "alt": "A scene from the Always Pushing commercial, shot from a low angle looking up at a building",
+      "meta": "Commercial, 1:07",
+      "win": "Product sponsorship by Vans Vietnam",
+      "synopsis": "A group of high school students skateboard together across different locations in Saigon.",
+      "awards": [
+        "Product sponsorship by Vans Vietnam"
+      ],
+      "credits": [
+        "Producer: Phạm Thảo Trang"
+      ]
+    },
+    {
+      "id": "nhinlai",
+      "type": "mv",
+      "title": "Looking Back",
+      "img": "/images/nhinlai.jpg",
+      "alt": "A scene from the music video Looking Back, with two students sitting by a window",
+      "meta": "Music video, 4:47",
+      "win": "4,923 views",
+      "synopsis": "A schoolgirl quietly follows and protects her male classmate at their old school.",
+      "awards": [
+        "199 likes, 4,923 views"
+      ]
+    },
+    {
+      "id": "luckycharm",
+      "type": "mv",
+      "title": "Lucky Charm",
+      "img": "/images/luckycharm.jpg",
+      "alt": "A scene from the Lucky Charm music video, featuring a girl in a flower-filled purple bathroom",
+      "meta": "Music video, 3:37",
+      "win": "4,204 views",
+      "synopsis": "A cheerful girl sings and vibes in a colourful, messy bathroom—a reflection of her inner world as she falls in love.",
+      "awards": [
+        "131 likes, 4,204 views"
+      ]
+    },
+    {
+      "id": "vach",
+      "type": "short",
+      "title": "Vạch",
+      "img": "/images/vach.jpg",
+      "alt": "A scene from Vạch, showing a close-up of feet and shoes",
+      "meta": "Short film, 2022",
+      "win": "Selected for Xinê Xem Short 2024",
+      "synopsis": "A model high school student tries to take a pregnancy test at school. This was director Đặng Thùy Trang’s debut short film.",
+      "awards": [
+        "Official Selection, End of Semester Screening 2022 (Hoa Sen, CGV Cinema)",
+        "Official Selection, Xinê Xem Short 2024 (Xinê House)"
+      ],
+      "credits": [
+        "Director: Đặng Thùy Trang",
+        "DOP: Trần Hào Khang"
+      ]
+    },
+    {
+      "id": "manocanh",
+      "type": "short",
+      "title": "Mannequin",
+      "img": "/images/manocanh.jpg",
+      "alt": "A scene from Mannequin, showing a girl doing homework beside a mannequin",
+      "meta": "Short film",
+      "win": "Selected for Tiệc phim ngắn Lagi 2024",
+      "synopsis": "A fashion design student struggles to finish her assignment while being repeatedly disturbed by a mysterious force from an unused room in her boarding house.",
+      "awards": [
+        "Official Selection, Tiệc phim ngắn Lagi 2024 (Trigger Film Academy)"
+      ],
+      "credits": [
+        "Producer, Director: Nguyễn Lê Uyển Thư"
+      ]
+    },
+    {
+      "id": "baddate",
+      "type": "short",
+      "title": "Bad Date",
+      "img": "/images/baddate.jpg",
+      "alt": "A scene from Bad Date, featuring red lighting and a monster’s silhouette",
+      "meta": "Short film",
+      "win": "Selected for Xinê Xem Short 2024",
+      "synopsis": "Inside a BDSM room at a love hotel, a boyfriend’s body lies on the bed beside a roaring monster. His frightened girlfriend hides behind a love seat.",
+      "awards": [
+        "Official Selection, End of Semester Screening 2022 (Hoa Sen, CGV Cinema)",
+        "Official Selection, Tiệc phim ngắn Lagi 2024 (Trigger Film Academy)",
+        "Official Selection, Xinê Xem Short 2024 (Xinê House)"
+      ],
+      "credits": [
+        "Director: Trần Hào Khang"
+      ]
+    },
+    {
+      "id": "taolao",
+      "type": "student",
+      "title": "One-shot “A Random Story”",
+      "img": "/images/taolao.jpg",
+      "alt": "A scene from the one-shot A Random Story, featuring a couple kissing in a café",
+      "meta": "Student film",
+      "synopsis": "A couple discusses robbing the café they are sitting in. This is a remake of a scene from Quentin Tarantino’s Pulp Fiction."
+    },
+    {
+      "id": "vutru",
+      "type": "student",
+      "title": "One-shot “In Another Universe”",
+      "img": "/images/vutru.jpg",
+      "alt": "A scene from the one-shot In Another Universe, featuring a girl beside a fish tank",
+      "meta": "Student film",
+      "synopsis": "In a Spider-Man universe somewhere in Vietnam, Quyên—chosen to become that universe’s spider-girl—has a direct conversation with her police-officer father about her pent-up frustrations. This is a remake of a scene from Sony Pictures’ Spider-Man: Across the Spider-Verse."
+    }
+  ],
+  "events": [
+    {
+      "e": "NGILNGIG Asian Fantastic Film Festival",
+      "items": [
+        {
+          "title": "The Mother of a Debtor, 2026",
+          "result": "Official Selection"
+        },
+        {
+          "title": "How An Apocalypse Ends, 2025",
+          "result": "Official Selection"
+        }
+      ]
+    },
+    {
+      "e": "Jogja-NETPAC Asian Film Festival 2025",
+      "items": [
+        {
+          "title": "How An Apocalypse Ends",
+          "result": "Official Selection"
+        }
+      ]
+    },
+    {
+      "e": "CinemaShort Asian Short Film Competition 2025",
+      "items": [
+        {
+          "title": "How An Apocalypse Ends",
+          "result": "Special Mention"
+        }
+      ]
+    },
+    {
+      "e": "Hollywood Shorts Fest",
+      "items": [
+        {
+          "title": "New Year’s Eve on the Edge of the City",
+          "result": "Honorable Mention"
+        }
+      ]
+    },
+    {
+      "e": "Writing Lab 2, Spring Auteurs",
+      "items": [
+        {
+          "title": "New Year’s Eve on the Edge of the City",
+          "result": "Best Script"
+        }
+      ]
+    },
+    {
+      "e": "Xinê Xem Short 2024",
+      "items": [
+        {
+          "title": "Vạch",
+          "result": "Official Selection"
+        },
+        {
+          "title": "Bad Date",
+          "result": "Official Selection"
+        },
+        {
+          "title": "New Year’s Eve on the Edge of the City",
+          "result": "Official Selection"
+        }
+      ]
+    },
+    {
+      "e": "Tiệc phim ngắn Lagi 2024",
+      "items": [
+        {
+          "title": "Mannequin",
+          "result": "Official Selection"
+        },
+        {
+          "title": "Bad Date",
+          "result": "Official Selection"
+        }
+      ]
+    },
+    {
+      "e": "Chợ Dự án Lagi 2024",
+      "items": [
+        {
+          "title": "Nhà Chung Chủ",
+          "result": "Top 7 projects"
+        }
+      ]
+    },
+    {
+      "e": "EOS Summer 2023",
+      "items": [
+        {
+          "title": "UpMood with McDonald's",
+          "result": "Best TVC picked by Brand"
+        },
+        {
+          "title": "Cầu Duyên",
+          "result": "Best Short Script"
+        }
+      ]
+    },
+    {
+      "e": "End of Semester Screening, Hoa Sen",
+      "items": [
+        {
+          "title": "New Year’s Eve on the Edge of the City, 2024",
+          "result": "Official Selection"
+        },
+        {
+          "title": "Vạch, 2022",
+          "result": "Official Selection"
+        },
+        {
+          "title": "Bad Date, 2022",
+          "result": "Official Selection"
+        }
+      ]
+    }
+  ],
+  "members": [
+    {
+      "n": "Nguyễn Lê Uyển Thư",
+      "r": "Writer, director, producer, 1st assistant director",
+      "b": "Media Technology Management student at Hoa Sen University. Works on short films, commercials, and commercial projects for ClickMedia Agency."
+    },
+    {
+      "n": "Đặng Thùy Trang",
+      "r": "Writer, director, 1st assistant director, editor",
+      "b": "Young director whose debut short film Vạch (2022) has led to experience across short films, music videos, and commercials."
+    },
+    {
+      "n": "Trần Hào Khang",
+      "r": "Director, DOP, camera operator, editor, colorist",
+      "b": "Freelancer working on short films, commercials, and feature films. Previously worked in camera and editing for WeChoice Awards 2024 videos."
+    },
+    {
+      "n": "Phạm Thảo Trang",
+      "r": "Producer, line producer, project manager, production assistant, behind-the-scenes photographer",
+      "b": "Produced the Always Pushing commercial and the short film Cầu Duyên."
+    },
+    {
+      "n": "Nguyễn Lan Vy",
+      "r": "Producer, line producer, project manager, production assistant, art department",
+      "b": "Frequently handles production and supports the art department on CREW projects."
+    },
+    {
+      "n": "Nguyễn Quốc Khánh",
+      "r": "Producer, line producer, project manager, production assistant",
+      "b": "Collaborator at Xinê House, planning and scheduling for the Program team."
+    },
+    {
+      "n": "Lê Thiện Trung",
+      "r": "DOP, camera operator, editor, gaffer",
+      "b": ""
+    }
+  ]
+}
