@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>CREW | Nhóm làm phim Đại học Hoa Sen</title>
-<meta name="description" content="CREW là nhóm làm phim trẻ từ ngành Quản trị Công nghệ Truyền thông, Đại học Hoa Sen. Phim ngắn, TVC, MV.">
+<meta name="description" content="CREW là nhóm làm phim trẻ từ ngành Quản trị Công nghệ Truyền thông, Đại học Hoa Sen. Phim ngắn, TVC, MV." id="pageDescription">
 <meta name="color-scheme" content="dark">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,6 +38,11 @@ button{font:inherit;color:inherit}
 .top nav{display:flex;gap:clamp(14px,3vw,34px);font-size:.9rem;overflow-x:auto}
 .top nav a{text-decoration:none;color:var(--mute);white-space:nowrap;padding:4px 0;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
 .top nav a:hover{color:var(--bone);border-color:var(--green)}
+
+
+.top .lang-toggle{flex:0 0 auto;background:transparent;border:1px solid var(--line);color:var(--bone);border-radius:999px;padding:7px 11px;font:inherit;font-size:.78rem;letter-spacing:.08em;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.top .lang-toggle:hover,.top .lang-toggle:focus-visible{border-color:var(--green);color:var(--green)}
+@media(max-width:640px){.top{gap:10px}.top nav{gap:12px;font-size:.78rem}.top .lang-toggle{padding:6px 9px;font-size:.72rem}}
 
 /* hero */
 .hero{padding:clamp(56px,10vw,120px) var(--gutter) clamp(56px,8vw,96px);min-height:calc(100svh - 60px);display:flex;flex-direction:column;justify-content:center;gap:clamp(28px,4vw,48px)}
@@ -158,6 +163,7 @@ footer{padding:28px var(--gutter) 40px;border-top:1px solid var(--line);color:va
     <a href="#thanh-vien">Thành viên</a>
     <a href="#lien-he">Liên hệ</a>
   </nav>
+  <button type="button" class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
 </header>
 
 <main id="top">
@@ -329,9 +335,18 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;
 $("#markImg").src = IMG.logo;
 $("#heroLogo").src = IMG.logo;
 
-/* filters */
+/* language + filters */
 let current = "all";
-const filterDefs = [["all","Tất cả"], ["short","Phim ngắn"], ["tvc","TVC"], ["mv","MV"], ["student","Student film"], ["dev","Dự án phát triển"]];
+let currentLang = "vi";
+const ui = {
+  vi: { filters: [["all","Tất cả"],["short","Phim ngắn"],["tvc","TVC"],["mv","MV"],["student","Student film"],["dev","Dự án phát triển"]],
+    filterAria:"Lọc theo loại dự án", detail:"Xem chi tiết", gallery:"Ảnh trong dự án", image:"ảnh", synopsis:"Nội dung", awards:"Thành tích", credits:"Ê-kíp", phone:"Điện thoại", close:"Đóng", pageDescription:"CREW là nhóm làm phim trẻ từ ngành Quản trị Công nghệ Truyền thông, Đại học Hoa Sen. Phim ngắn, TVC, MV." },
+  en: { filters: [["all","All"],["short","Short films"],["tvc","Commercials"],["mv","Music videos"],["student","Student films"],["dev","In development"]],
+    filterAria:"Filter by project type", detail:"View details", gallery:"Project images", image:"image", synopsis:"Synopsis", awards:"Awards & selections", credits:"Crew", phone:"Phone", close:"Close", pageDescription:"CREW is a young film collective from Hoa Sen University’s Media Technology Management program, producing short films, commercials, and music videos." }
+};
+function tr(key){ return (ui[currentLang] && ui[currentLang][key]) || ui.vi[key] || key; }
+const filterDefs = () => ui[currentLang].filters;
+
 function imageSrc(value){
   if(!value) return "";
   if(value.startsWith("http://") || value.startsWith("https://") || value.startsWith("data:")) return value;
@@ -342,7 +357,8 @@ function imageSrc(value){
 }
 
 function renderFilters(){
-  $("#filters").innerHTML = filterDefs.map(([k,l]) =>
+  $("#filters").setAttribute("aria-label", tr("filterAria"));
+  $("#filters").innerHTML = filterDefs().map(([k,l]) =>
     `<button type="button" data-k="${k}" aria-pressed="${k===current}">${l}</button>`).join("");
 }
 $("#filters").addEventListener("click", e => {
@@ -360,7 +376,7 @@ function renderWorks(){
     const head = w.img ? `<h3>${esc(w.title)}</h3>` : "";
     const meta = w.img ? `<p class="meta">${esc(w.meta)}</p>` : "";
     const win = w.win ? `<p class="win">${esc(w.win)}</p>` : "";
-    return `<button type="button" class="work" data-id="${w.id}" aria-label="Xem chi tiết: ${esc(w.title)}">${visual}${head}${meta}${win}</button>`;
+    return `<button type="button" class="work" data-id="${w.id}" aria-label="${esc(tr("detail"))}: ${esc(w.title)}">${visual}${head}${meta}${win}</button>`;
   }).join("");
 }
 $("#works").addEventListener("click", e => {
@@ -376,8 +392,8 @@ function renderProjectGallery(w){
   if(!images.length) return "";
   const main = images[0];
   const thumbs = images.length > 1
-    ? `<div class="gallery-thumbs" aria-label="Ảnh trong dự án">${images.map((src, i) =>
-        `<button type="button" class="gallery-thumb" data-gallery-index="${i}" aria-label="Xem ảnh ${i+1}" aria-pressed="${i===0}"><img src="${imageSrc(src)}" alt="" loading="lazy"></button>`
+    ? `<div class="gallery-thumbs" aria-label="${esc(tr("gallery"))}">${images.map((src, i) =>
+        `<button type="button" class="gallery-thumb" data-gallery-index="${i}" aria-label="${esc(tr("detail"))} ${i+1}" aria-pressed="${i===0}"><img src="${imageSrc(src)}" alt="" loading="lazy"></button>`
       ).join("")}</div>`
     : "";
   return `<div class="gallery-main"><img id="galleryMainImage" src="${imageSrc(main)}" alt="${esc(w.alt || w.title)}"></div>${thumbs}`;
@@ -390,9 +406,9 @@ function openWork(id){
   $("#dlgMedia").style.display = gallery.length ? "flex" : "none";
   dlg.querySelector(".dlg-grid").style.gridTemplateColumns = gallery.length ? "" : "1fr";
   let h = `<h3 id="dlgTitle">${esc(w.title)}</h3><p class="meta">${esc(w.meta)}</p>`;
-  if(w.synopsis) h += `<h4>Nội dung</h4><p>${esc(w.synopsis)}</p>`;
-  if((w.awards || []).length) h += `<h4>Thành tích</h4><ul>${(w.awards || []).map(a=>`<li>${esc(a)}</li>`).join("")}</ul>`;
-  if((w.credits || []).length) h += `<h4>Ê-kíp</h4><ul>${(w.credits || []).map(a=>`<li>${esc(a)}</li>`).join("")}</ul>`;
+  if(w.synopsis) h += `<h4>${esc(tr("synopsis"))}</h4><p>${esc(w.synopsis)}</p>`;
+  if((w.awards || []).length) h += `<h4>${esc(tr("awards"))}</h4><ul>${(w.awards || []).map(a=>`<li>${esc(a)}</li>`).join("")}</ul>`;
+  if((w.credits || []).length) h += `<h4>${esc(tr("credits"))}</h4><ul>${(w.credits || []).map(a=>`<li>${esc(a)}</li>`).join("")}</ul>`;
   $("#dlgBody").innerHTML = h;
   dlg.showModal();
   dlg.scrollTop = 0;
@@ -406,7 +422,7 @@ $("#dlgMedia").addEventListener("click", e => {
   const index = Number(button.dataset.galleryIndex);
   if(!images[index]) return;
   const main = $("#galleryMainImage");
-  if(main){ main.src = imageSrc(images[index]); main.alt = `${esc(w.title)} — ảnh ${index+1}`; }
+  if(main){ main.src = imageSrc(images[index]); main.alt = `${esc(w.title)} — ${tr("image")} ${index+1}`; }
   $("#dlgMedia").querySelectorAll(".gallery-thumb").forEach((thumb, i) => thumb.setAttribute("aria-pressed", String(i === index)));
 });
 $("#dlgClose").addEventListener("click", () => dlg.close());
@@ -489,9 +505,19 @@ function applySectionOrder(order){
   order.forEach(key => { if(nodes[key] && nodes[key].parentElement === main) main.appendChild(nodes[key]); });
   // Keep any section not listed after the requested sections, and do not move the hero outside main.
 }
-async function initializeFromCMS(){
+async function loadLanguage(lang){
+  currentLang = lang === "en" ? "en" : "vi";
+  const toggle = $("#langToggle");
+  if(toggle){ toggle.textContent = currentLang === "vi" ? "EN" : "VI"; toggle.setAttribute("aria-label", currentLang === "vi" ? "Switch to English" : "Chuyển sang tiếng Việt"); }
+  document.documentElement.lang = currentLang;
+  const description = document.querySelector('meta[name="description"]');
+  if(description) description.setAttribute("content", ui[currentLang].pageDescription);
+  const phoneLabel = document.querySelector("#lien-he dl div:nth-child(1) dt");
+  if(phoneLabel) phoneLabel.textContent = tr("phone");
+  const close = $("#dlgClose");
+  if(close) close.setAttribute("aria-label", tr("close"));
   try {
-    const response = await fetch("/content/site.json", {cache:"no-cache"});
+    const response = await fetch(currentLang === "en" ? "/content/site.en.json" : "/content/site.json", {cache:"no-cache"});
     if(!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     applySiteSettings(data);
@@ -500,12 +526,19 @@ async function initializeFromCMS(){
     if(Array.isArray(data.members)) MEMBERS = data.members;
     applySectionOrder(data.section_order);
   } catch(error) {
-    console.warn("Could not load content/site.json; using built-in website content.", error);
+    console.warn(`Could not load content for language ${currentLang}; using built-in website content.`, error);
   }
   renderEvents();
   renderMembers();
   renderFilters();
   renderWorks();
+}
+$("#langToggle").addEventListener("click", () => {
+  const next = currentLang === "vi" ? "en" : "vi";
+  loadLanguage(next);
+});
+async function initializeFromCMS(){
+  await loadLanguage("vi");
 }
 
 initializeFromCMS();
