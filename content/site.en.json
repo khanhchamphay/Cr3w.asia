@@ -1,18 +1,20 @@
 {
-  "site_title": "CREW | Hoa Sen University Film Collective",
-  "tagline": "CREW is a young film collective from Hoa Sen University’s Media Technology Management program, producing short films, commercials, and music videos.",
-  "hero_title": "A young film collective from Hoa Sen University",
-  "hero_description": "We are students from the Media Technology Management program, creating short films, commercials, and music videos. CREW films have been selected by NGILNGIG, Jogja-NETPAC, and Xinê Xem Short.",
-  "hero_primary_label": "Explore projects",
-  "hero_primary_href": "#du-an",
-  "hero_secondary_label": "Work with us",
-  "hero_secondary_href": "#lien-he",
+  "site_title": "CR3W | Video Production & Post-Production Vietnam",
+  "tagline": "Independent production house in Vietnam offering video production, editing, and remote post-production services for clients worldwide.",
+  "hero_title": "We Are CR3W",
+  "hero_description": "CR3W is an independent production house based in Vietnam, working across film, commercials, music videos, and branded content.\n\nFrom production to post-production, we collaborate with creators and clients worldwide, both on-site and remotely.\n\nBased in Vietnam. Working worldwide, on-site and remotely.",
+  "hero_logo_image": "/images/logo crew.png",
+  "mark_image": "/images/logo crew-1.png",
+  "hero_primary_label": "Explore Our Work",
+  "hero_primary_href": "#projects",
+  "hero_secondary_label": "Work With Us",
+  "hero_secondary_href": "#contact",
   "nav_projects": "Projects",
   "nav_events": "Recognition",
-  "nav_members": "Members",
-  "nav_contact": "Contact",
-  "projects_heading": "Projects",
-  "projects_description": "Select a project to explore its synopsis, recognition, and crew.",
+  "nav_members": "Our Team",
+  "nav_contact": "Contact Us",
+  "projects_heading": "Selected Works",
+  "projects_description": "Explore our selected film, commercial, music video, and branded content projects, including production details, credits, and festival recognition.",
   "events_heading": "Recognition",
   "events_description": "Official selections and awards from festivals, screenings, and project markets.",
   "members_heading": "Members",
@@ -381,8 +383,7 @@
     },
     {
       "n": "Lê Thiện Trung",
-      "r": "DOP, camera operator, editor, gaffer",
-      "b": ""
+      "r": "DOP, camera operator, editor, gaffer"
     }
   ]
 }
