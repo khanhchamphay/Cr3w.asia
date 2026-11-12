@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>CREW | Nhóm làm phim Đại học Hoa Sen</title>
-<meta name="description" content="CREW là nhóm làm phim trẻ từ ngành Quản trị Công nghệ Truyền thông, Đại học Hoa Sen. Phim ngắn, TVC, MV." id="pageDescription">
+<meta name="description" content="CREW là nhóm làm phim trẻ từ ngành Quản trị Công nghệ Truyền thông, Đại học Hoa Sen. Phim ngắn, TVC, MV.">
 <meta name="color-scheme" content="dark">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&family=Unbounded:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Be+Vietnam+Pro:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
   --base:#000;
@@ -17,7 +17,7 @@
   --mute:#9b9c96;
   --line:rgba(237,235,228,.18);
   --green:#79ff81;
-  --display:"Unbounded","Be Vietnam Pro","Segoe UI",system-ui,sans-serif;
+  --display:"Archivo Black","Be Vietnam Pro","Segoe UI",system-ui,sans-serif;
   --body:"Be Vietnam Pro","Segoe UI",system-ui,-apple-system,sans-serif;
   --gutter:clamp(20px,5vw,72px);
   box-sizing:border-box;
@@ -38,11 +38,6 @@ button{font:inherit;color:inherit}
 .top nav{display:flex;gap:clamp(14px,3vw,34px);font-size:.9rem;overflow-x:auto}
 .top nav a{text-decoration:none;color:var(--mute);white-space:nowrap;padding:4px 0;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
 .top nav a:hover{color:var(--bone);border-color:var(--green)}
-
-
-.top .lang-toggle{flex:0 0 auto;background:transparent;border:1px solid var(--line);color:var(--bone);border-radius:999px;padding:7px 11px;font:inherit;font-size:.78rem;letter-spacing:.08em;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
-.top .lang-toggle:hover,.top .lang-toggle:focus-visible{border-color:var(--green);color:var(--green)}
-@media(max-width:640px){.top{gap:10px}.top nav{gap:12px;font-size:.78rem}.top .lang-toggle{padding:6px 9px;font-size:.72rem}}
 
 /* hero */
 .hero{padding:clamp(56px,10vw,120px) var(--gutter) clamp(56px,8vw,96px);min-height:calc(100svh - 60px);display:flex;flex-direction:column;justify-content:center;gap:clamp(28px,4vw,48px)}
@@ -151,34 +146,95 @@ footer{padding:28px var(--gutter) 40px;border-top:1px solid var(--line);color:va
   dialog[open]{animation:none}
   .work img{transition:none}
 }
+
+/* ===== CREW BROADCAST IDENTITY / UI IMPLEMENTATION ===== */
+:root{--base:#17232c;--raise:rgba(233,231,222,.045);--bone:#e9e7de;--mute:#aab8c2;--line:rgba(217,224,223,.2);--green:#55d6d0;--display:"Archivo Black","Be Vietnam Pro",sans-serif;--body:"Be Vietnam Pro",sans-serif;--mono:"IBM Plex Mono",monospace;--gutter:clamp(22px,6vw,88px)}
+html{background:var(--base);color-scheme:dark}
+body{background:var(--base);color:var(--bone);font-size:15px}
+:focus-visible{outline-color:var(--green)}
+.top{padding:17px var(--gutter);background:rgba(23,35,44,.9);border-color:var(--line)}
+.top .mark{height:25px;filter:grayscale(1) brightness(0) invert(1)}
+.top nav{gap:clamp(14px,2.8vw,38px);font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.04em}
+.top nav a{color:var(--mute)}.top nav a:hover{color:var(--green);border-color:var(--green)}
+.hero{position:relative;isolation:isolate;min-height:min(790px,calc(100svh - 60px));padding:clamp(62px,8vw,112px) var(--gutter) 34px;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(280px,.92fr);align-items:center;gap:clamp(36px,6vw,100px);overflow:hidden;border-bottom:1px solid var(--line)}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.13;pointer-events:none;background-image:linear-gradient(rgba(217,224,223,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(217,224,223,.12) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(to bottom,black,transparent)}
+.hero-copy{min-width:0}.eyebrow,.mono-label,.hero-foot,.tv-topline,.tv-bottomline,.screen-time,.crt-brand,.screen-caption{font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase}
+.eyebrow{display:flex;align-items:center;gap:10px;color:var(--green);margin-bottom:30px}.eyebrow-right{margin-left:auto;color:var(--mute)}.live-dot,.rec i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green)}
+.hero h1{max-width:none;margin:0 0 24px;font-family:var(--display);font-weight:400;font-size:clamp(3.2rem,7.5vw,7.5rem);line-height:.88;letter-spacing:-.045em;text-transform:uppercase}.hero h1 em{font-style:normal;color:var(--green)}
+.hero p{max-width:48ch;color:var(--mute);font-size:clamp(.94rem,1.15vw,1.05rem);line-height:1.85}.hero .actions{margin-top:30px;gap:12px}.btn{padding:13px 19px;border-color:var(--line);font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase}.btn.solid{background:var(--green);border-color:var(--green);color:#10252c}.btn.solid:hover{background:var(--bone);border-color:var(--bone)}.btn:hover{background:var(--bone);color:var(--base)}
+.hero-foot{display:flex;justify-content:space-between;gap:18px;margin-top:clamp(48px,7vw,90px);padding-top:14px;border-top:1px solid var(--line);color:var(--mute);font-size:9px}
+.hero-visual{width:100%;max-width:570px;justify-self:end;transform:rotate(1.5deg)}.tv-topline,.tv-bottomline{display:flex;justify-content:space-between;gap:12px;color:var(--mute);font-size:9px;padding:10px 2px}.rec{color:#ff817c}.rec i{width:6px;height:6px;background:#ff817c;box-shadow:0 0 10px #ff817c;margin-right:5px}
+.crt-shell{padding:clamp(12px,2vw,22px);background:linear-gradient(145deg,#52616b,#263943 28%,#101a20 75%);border:1px solid #71818a;border-radius:24px 24px 34px 34px;box-shadow:0 30px 80px rgba(0,0,0,.45),inset 0 1px 1px rgba(255,255,255,.3)}.crt-screen{position:relative;min-height:clamp(250px,33vw,430px);overflow:hidden;border-radius:48% / 8%;border:9px solid #0a1217;background:radial-gradient(ellipse at 50% 45%,#315d65 0,#152e38 52%,#071218 100%);box-shadow:inset 0 0 45px #000,0 0 0 1px #687983;display:grid;place-items:center}.crt-screen:after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(to bottom,rgba(0,0,0,.12) 0 1px,transparent 1px 4px),linear-gradient(90deg,rgba(85,214,208,.05),transparent 35%,rgba(85,214,208,.06));mix-blend-mode:screen}.screen-noise{position:absolute;inset:0;opacity:.14;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}.screen-content{position:relative;z-index:1;display:grid;justify-items:center;gap:12px;text-align:center}.hero-visual .logo{width:min(58%,250px);height:auto;filter:grayscale(1) brightness(0) invert(1);opacity:.92;animation:none}.screen-caption{color:var(--green);line-height:1.6}.screen-time{position:absolute;z-index:2;right:20px;bottom:15px;color:rgba(233,231,222,.65);font-size:8px}.crt-controls{display:flex;align-items:center;justify-content:space-between;padding:13px 8px 2px}.crt-brand{font-weight:500;color:#c4d0d3}.crt-knobs{display:flex;gap:8px}.crt-knobs i{width:13px;height:13px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#a7b4b9,#263943 65%);border:1px solid #71818a}
+section{padding:clamp(66px,8vw,112px) var(--gutter);border-color:var(--line)}.sec-head{margin-bottom:clamp(30px,4vw,52px)}.section-kicker{display:block;width:100%;color:var(--green);margin-bottom:8px}.mono-label{color:var(--green)}h2{font-family:var(--display);font-size:clamp(2.1rem,5vw,4.7rem);line-height:.98;font-weight:400;letter-spacing:-.035em;text-transform:uppercase}.lede{color:var(--mute);font-size:.94rem}.services-section{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(36px,8vw,120px);background:var(--bone);color:var(--base);border:0}.service-intro h2{margin:20px 0;font-size:clamp(2.3rem,4.5vw,4.4rem)}.service-intro p{max-width:44ch;color:#52616b}.services-section .mono-label{color:#277f82}.service-list{align-self:center}.service-item{display:grid;grid-template-columns:38px 1fr 20px;align-items:start;gap:16px;padding:23px 0;border-top:1px solid rgba(23,35,44,.22)}.service-item:last-child{border-bottom:1px solid rgba(23,35,44,.22)}.service-index,.service-arrow{font-family:var(--mono);font-size:11px;color:#277f82}.service-item h3{margin:0 0 5px;font-family:var(--mono);font-size:clamp(.95rem,1.5vw,1.15rem);letter-spacing:.03em}.service-item p{margin:0;color:#52616b;font-size:.83rem}.service-arrow{font-size:18px;text-align:right}
+.filters{gap:7px}.filters button{border-radius:0;border-color:var(--line);font-family:var(--mono);font-size:.68rem;text-transform:uppercase;letter-spacing:.03em}.filters button[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#10252c}.works{column-count:2;column-gap:clamp(18px,3vw,42px)}.work{margin-bottom:clamp(28px,4vw,52px)}.work .frame{background:#0d171d;border:1px solid var(--line)}.work img{filter:saturate(.82)}.work:hover img,.work:focus-visible img{filter:saturate(1.08)}.work h3{font-family:var(--body);font-weight:600;font-size:1rem}.work .meta,.work .win{font-family:var(--mono);font-size:.7rem;letter-spacing:.02em}.work .win{color:var(--green)}.work .txt-card{background:#20333e;border-color:var(--line)}.work .txt-card b{font-family:var(--display);font-size:1.8rem}
+.year{border-color:var(--line)}.year>h3,.member h3{font-family:var(--display);font-weight:400}.year li span{color:var(--mute)}.member .roles{color:var(--green)}.contact .mail{font-family:var(--display);font-weight:400;font-size:clamp(1.4rem,3vw,2.8rem);border-color:var(--green)}footer{border-color:var(--line);font-family:var(--mono);font-size:.68rem;letter-spacing:.04em;text-transform:uppercase}
+@media(max-width:800px){.hero{grid-template-columns:1fr;min-height:auto;padding-top:68px;gap:44px}.hero-visual{justify-self:center;width:min(100%,560px)}.crt-screen{min-height:clamp(250px,65vw,390px)}.services-section{grid-template-columns:1fr;gap:32px}.service-intro p{max-width:58ch}.works{column-count:2}}
+@media(max-width:560px){.top{align-items:flex-start;gap:12px}.top .mark{height:20px}.top nav{gap:14px;font-size:9px;max-width:calc(100vw - 90px)}.hero{padding-top:52px}.eyebrow{font-size:8px}.hero h1{font-size:clamp(2.85rem,14vw,5rem)}.hero-foot{font-size:7px;flex-direction:column;gap:6px}.hero-visual{transform:none}.crt-shell{border-radius:17px 17px 25px 25px}.crt-screen{min-height:250px;border-width:6px}.works{column-count:1}.filters{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:5px}.filters button{white-space:nowrap}.year{grid-template-columns:1fr;gap:10px}.members{grid-template-columns:1fr}.service-item{grid-template-columns:28px 1fr 18px;gap:10px}.contact{grid-template-columns:1fr}.dlg-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.hero-visual{transform:none}.work img{transition:none}}
+
+
+/* wordmark replaces the legacy logo asset in the new broadcast identity */
+.brand-wordmark{display:inline-flex;align-items:baseline;text-decoration:none;font-family:var(--display);font-size:25px;line-height:1;letter-spacing:-.08em;color:var(--bone)}
+.brand-wordmark span:first-child{color:var(--green)}
+.brand-wordmark .brand-dot{font-family:var(--mono);font-size:9px;letter-spacing:0;margin-left:4px;color:var(--green)}
+.screen-wordmark{font-family:var(--display);font-size:clamp(3rem,8vw,5.8rem);line-height:1;letter-spacing:-.09em;color:var(--bone);text-shadow:0 0 18px rgba(85,214,208,.38)}
+.screen-wordmark span:first-child{color:var(--green)}
+.screen-wordmark span:last-child{font-family:var(--mono);font-size:.16em;vertical-align:top;letter-spacing:0;margin-left:5px;color:var(--green)}
+/* prevent legacy embedded logo selectors from affecting the new layout */
+.top .mark,.hero > .logo{display:none}
+@media(max-width:560px){.brand-wordmark{font-size:21px}}
+
+/* Official CREW identity assets supplied by the team */
+.brand-image{display:inline-flex;align-items:center;flex:0 0 auto;width:42px;height:42px;overflow:hidden;border-radius:50%;border:1px solid rgba(217,224,223,.22);background:#17232c}
+.brand-image img{display:block;width:100%;height:100%;object-fit:cover}
+.hero-visual{width:100%;max-width:900px;justify-self:end;transform:none}
+.crew-cover{display:block;width:100%;height:auto;object-fit:contain;border:1px solid rgba(217,224,223,.12);box-shadow:0 24px 70px rgba(0,0,0,.28)}
+@media(max-width:800px){.hero-visual{width:100%;max-width:100%}}
+@media(max-width:560px){.brand-image{width:34px;height:34px}.crew-cover{border-radius:2px}}
+
 </style>
 </head>
 <body>
 
 <header class="top">
-  <a href="#top" aria-label="CREW, về đầu trang"><img class="mark" id="markImg" alt="CREW"></a>
+  <a class="brand-image" href="#top" aria-label="CREW, về đầu trang"><img src="./assets/crew-avatar.png" alt="CREW logo"></a>
   <nav aria-label="Điều hướng">
     <a href="#du-an">Dự án</a>
     <a href="#thanh-tich">Thành tích</a>
     <a href="#thanh-vien">Thành viên</a>
     <a href="#lien-he">Liên hệ</a>
   </nav>
-  <button type="button" class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
 </header>
 
 <main id="top">
   <div class="hero">
-    <img class="logo" id="heroLogo" alt="CREW">
-    <h1>Nhóm làm phim trẻ từ Đại học Hoa Sen</h1>
-    <p>Chúng mình đến từ ngành Quản trị Công nghệ Truyền thông, làm phim ngắn, TVC và MV. Phim của CREW đã được chọn chiếu tại NGILNGIG, Jogja-NETPAC và Xinê Xem Short.</p>
-    <div class="actions">
-      <a class="btn solid" href="#du-an">Xem dự án</a>
-      <a class="btn" href="#lien-he">Liên hệ làm việc</a>
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="live-dot"></span> CH.001 / CREW BROADCAST <span class="eyebrow-right">HCMC · VIETNAM</span></div>
+      <h1>WE MAKE<br><em>MOVING IMAGES.</em></h1>
+      <p>Nhóm làm phim trẻ từ Đại học Hoa Sen. Chúng mình phát triển và sản xuất phim ngắn, TVC, MV — từ ý tưởng đến khung hình cuối cùng.</p>
+      <div class="actions">
+        <a class="btn solid" href="#du-an">TUNE IN <span aria-hidden="true">↗</span></a>
+        <a class="btn" href="#lien-he">Liên hệ làm việc</a>
+      </div>
+      <div class="hero-foot"><span>INDEPENDENT CREATIVE PRODUCTION</span><span>EST. 2022 — SIGNAL ACTIVE</span></div>
+    </div>
+    <div class="hero-visual" aria-label="CREW cover artwork">
+      <img class="crew-cover" src="./assets/crew-cover.png" alt="CREW — Production">
     </div>
   </div>
 
+  <section class="services-section" id="services" aria-labelledby="h-services">
+    <div class="service-intro"><span class="mono-label">CH.002 / WHAT WE DO</span><h2 id="h-services">FROM FIRST IDEA<br>TO FINAL FRAME.</h2><p>CREW tham gia vào nhiều giai đoạn của quá trình làm phim, với đội ngũ linh hoạt theo từng dự án.</p></div>
+    <div class="service-list">
+      <article class="service-item"><span class="service-index">01</span><div><h3>DEVELOPMENT</h3><p>Creative development · Concept · Treatment · Script</p></div><span class="service-arrow">↗</span></article>
+      <article class="service-item"><span class="service-index">02</span><div><h3>PRODUCTION</h3><p>Film · TVC · Music video · Production management</p></div><span class="service-arrow">↗</span></article>
+      <article class="service-item"><span class="service-index">03</span><div><h3>POST-PRODUCTION</h3><p>Editing · Color · Sound · Finishing</p></div><span class="service-arrow">↗</span></article>
+    </div>
+  </section>
+
   <section id="du-an" aria-labelledby="h-du-an">
     <div class="sec-head">
+      <span class="mono-label section-kicker">CH.003 / SELECTED WORKS</span>
       <div>
         <h2 id="h-du-an">Dự án</h2>
         <p class="lede">Bấm vào từng dự án để xem nội dung, thành tích và ê-kíp.</p>
@@ -190,6 +246,7 @@ footer{padding:28px var(--gutter) 40px;border-top:1px solid var(--line);color:va
 
   <section id="thanh-tich" aria-labelledby="h-thanh-tich">
     <div class="sec-head">
+      <span class="mono-label section-kicker">CH.004 / ON AIR & FESTIVALS</span>
       <div>
         <h2 id="h-thanh-tich">Thành tích</h2>
         <p class="lede">Các lựa chọn chính thức và giải thưởng từ liên hoan, buổi chiếu và chợ dự án.</p>
@@ -200,6 +257,7 @@ footer{padding:28px var(--gutter) 40px;border-top:1px solid var(--line);color:va
 
   <section id="thanh-vien" aria-labelledby="h-thanh-vien">
     <div class="sec-head">
+      <span class="mono-label section-kicker">CH.005 / THE CREW</span>
       <div>
         <h2 id="h-thanh-vien">Thành viên</h2>
         <p class="lede">Mỗi người đảm nhiệm nhiều vị trí, tùy dự án.</p>
@@ -210,6 +268,7 @@ footer{padding:28px var(--gutter) 40px;border-top:1px solid var(--line);color:va
 
   <section id="lien-he" aria-labelledby="h-lien-he">
     <div class="sec-head">
+      <span class="mono-label section-kicker">CH.006 / GET IN TOUCH</span>
       <div>
         <h2 id="h-lien-he">Liên hệ</h2>
         <p class="lede">Gửi email cho chúng mình về phim, TVC hoặc MV bạn đang chuẩn bị.</p>
@@ -226,7 +285,7 @@ footer{padding:28px var(--gutter) 40px;border-top:1px solid var(--line);color:va
   </section>
 </main>
 
-<footer>CREW, nhóm làm phim Đại học Hoa Sen, hoạt động từ 2022.</footer>
+<footer>CREW® — Broadcasting creative works · Nhóm làm phim Đại học Hoa Sen · Est. 2022</footer>
 
 <dialog id="dlg" aria-labelledby="dlgTitle">
   <button class="dlg-close" id="dlgClose" aria-label="Đóng">&times;</button>
@@ -332,21 +391,12 @@ const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
 /* logo */
-$("#markImg").src = IMG.logo;
-$("#heroLogo").src = IMG.logo;
+if ($("#markImg")) $("#markImg").src = IMG.logo;
+if ($("#heroLogo")) $("#heroLogo").src = IMG.logo;
 
-/* language + filters */
+/* filters */
 let current = "all";
-let currentLang = "vi";
-const ui = {
-  vi: { filters: [["all","Tất cả"],["short","Phim ngắn"],["tvc","TVC"],["mv","MV"],["student","Student film"],["dev","Dự án phát triển"]],
-    filterAria:"Lọc theo loại dự án", detail:"Xem chi tiết", gallery:"Ảnh trong dự án", image:"ảnh", synopsis:"Nội dung", awards:"Thành tích", credits:"Ê-kíp", phone:"Điện thoại", close:"Đóng", pageDescription:"CREW là nhóm làm phim trẻ từ ngành Quản trị Công nghệ Truyền thông, Đại học Hoa Sen. Phim ngắn, TVC, MV." },
-  en: { filters: [["all","All"],["short","Short films"],["tvc","Commercials"],["mv","Music videos"],["student","Student films"],["dev","In development"]],
-    filterAria:"Filter by project type", detail:"View details", gallery:"Project images", image:"image", synopsis:"Synopsis", awards:"Awards & selections", credits:"Crew", phone:"Phone", close:"Close", pageDescription:"CREW is a young film collective from Hoa Sen University’s Media Technology Management program, producing short films, commercials, and music videos." }
-};
-function tr(key){ return (ui[currentLang] && ui[currentLang][key]) || ui.vi[key] || key; }
-const filterDefs = () => ui[currentLang].filters;
-
+const filterDefs = [["all","Tất cả"], ["short","Phim ngắn"], ["tvc","TVC"], ["mv","MV"], ["student","Student film"], ["dev","Dự án phát triển"]];
 function imageSrc(value){
   if(!value) return "";
   if(value.startsWith("http://") || value.startsWith("https://") || value.startsWith("data:")) return value;
@@ -357,8 +407,7 @@ function imageSrc(value){
 }
 
 function renderFilters(){
-  $("#filters").setAttribute("aria-label", tr("filterAria"));
-  $("#filters").innerHTML = filterDefs().map(([k,l]) =>
+  $("#filters").innerHTML = filterDefs.map(([k,l]) =>
     `<button type="button" data-k="${k}" aria-pressed="${k===current}">${l}</button>`).join("");
 }
 $("#filters").addEventListener("click", e => {
@@ -376,7 +425,7 @@ function renderWorks(){
     const head = w.img ? `<h3>${esc(w.title)}</h3>` : "";
     const meta = w.img ? `<p class="meta">${esc(w.meta)}</p>` : "";
     const win = w.win ? `<p class="win">${esc(w.win)}</p>` : "";
-    return `<button type="button" class="work" data-id="${w.id}" aria-label="${esc(tr("detail"))}: ${esc(w.title)}">${visual}${head}${meta}${win}</button>`;
+    return `<button type="button" class="work" data-id="${w.id}" aria-label="Xem chi tiết: ${esc(w.title)}">${visual}${head}${meta}${win}</button>`;
   }).join("");
 }
 $("#works").addEventListener("click", e => {
@@ -392,8 +441,8 @@ function renderProjectGallery(w){
   if(!images.length) return "";
   const main = images[0];
   const thumbs = images.length > 1
-    ? `<div class="gallery-thumbs" aria-label="${esc(tr("gallery"))}">${images.map((src, i) =>
-        `<button type="button" class="gallery-thumb" data-gallery-index="${i}" aria-label="${esc(tr("detail"))} ${i+1}" aria-pressed="${i===0}"><img src="${imageSrc(src)}" alt="" loading="lazy"></button>`
+    ? `<div class="gallery-thumbs" aria-label="Ảnh trong dự án">${images.map((src, i) =>
+        `<button type="button" class="gallery-thumb" data-gallery-index="${i}" aria-label="Xem ảnh ${i+1}" aria-pressed="${i===0}"><img src="${imageSrc(src)}" alt="" loading="lazy"></button>`
       ).join("")}</div>`
     : "";
   return `<div class="gallery-main"><img id="galleryMainImage" src="${imageSrc(main)}" alt="${esc(w.alt || w.title)}"></div>${thumbs}`;
@@ -406,9 +455,9 @@ function openWork(id){
   $("#dlgMedia").style.display = gallery.length ? "flex" : "none";
   dlg.querySelector(".dlg-grid").style.gridTemplateColumns = gallery.length ? "" : "1fr";
   let h = `<h3 id="dlgTitle">${esc(w.title)}</h3><p class="meta">${esc(w.meta)}</p>`;
-  if(w.synopsis) h += `<h4>${esc(tr("synopsis"))}</h4><p>${esc(w.synopsis)}</p>`;
-  if((w.awards || []).length) h += `<h4>${esc(tr("awards"))}</h4><ul>${(w.awards || []).map(a=>`<li>${esc(a)}</li>`).join("")}</ul>`;
-  if((w.credits || []).length) h += `<h4>${esc(tr("credits"))}</h4><ul>${(w.credits || []).map(a=>`<li>${esc(a)}</li>`).join("")}</ul>`;
+  if(w.synopsis) h += `<h4>Nội dung</h4><p>${esc(w.synopsis)}</p>`;
+  if((w.awards || []).length) h += `<h4>Thành tích</h4><ul>${(w.awards || []).map(a=>`<li>${esc(a)}</li>`).join("")}</ul>`;
+  if((w.credits || []).length) h += `<h4>Ê-kíp</h4><ul>${(w.credits || []).map(a=>`<li>${esc(a)}</li>`).join("")}</ul>`;
   $("#dlgBody").innerHTML = h;
   dlg.showModal();
   dlg.scrollTop = 0;
@@ -422,7 +471,7 @@ $("#dlgMedia").addEventListener("click", e => {
   const index = Number(button.dataset.galleryIndex);
   if(!images[index]) return;
   const main = $("#galleryMainImage");
-  if(main){ main.src = imageSrc(images[index]); main.alt = `${esc(w.title)} — ${tr("image")} ${index+1}`; }
+  if(main){ main.src = imageSrc(images[index]); main.alt = `${esc(w.title)} — ảnh ${index+1}`; }
   $("#dlgMedia").querySelectorAll(".gallery-thumb").forEach((thumb, i) => thumb.setAttribute("aria-pressed", String(i === index)));
 });
 $("#dlgClose").addEventListener("click", () => dlg.close());
@@ -493,8 +542,8 @@ function applySiteSettings(data){
   if(footer && data.footer_text) footer.textContent = data.footer_text;
 
   // Keep the current Base64 logo unless a new CMS image is explicitly provided.
-  if(data.hero_logo_image) $("#heroLogo").src = data.hero_logo_image;
-  if(data.mark_image) $("#markImg").src = data.mark_image;
+  if(data.hero_logo_image && $("#heroLogo")) $("#heroLogo").src = data.hero_logo_image;
+  if(data.mark_image && $("#markImg")) $("#markImg").src = data.mark_image;
 }
 function applySectionOrder(order){
   if(!Array.isArray(order) || !order.length) return;
@@ -505,19 +554,9 @@ function applySectionOrder(order){
   order.forEach(key => { if(nodes[key] && nodes[key].parentElement === main) main.appendChild(nodes[key]); });
   // Keep any section not listed after the requested sections, and do not move the hero outside main.
 }
-async function loadLanguage(lang){
-  currentLang = lang === "en" ? "en" : "vi";
-  const toggle = $("#langToggle");
-  if(toggle){ toggle.textContent = currentLang === "vi" ? "EN" : "VI"; toggle.setAttribute("aria-label", currentLang === "vi" ? "Switch to English" : "Chuyển sang tiếng Việt"); }
-  document.documentElement.lang = currentLang;
-  const description = document.querySelector('meta[name="description"]');
-  if(description) description.setAttribute("content", ui[currentLang].pageDescription);
-  const phoneLabel = document.querySelector("#lien-he dl div:nth-child(1) dt");
-  if(phoneLabel) phoneLabel.textContent = tr("phone");
-  const close = $("#dlgClose");
-  if(close) close.setAttribute("aria-label", tr("close"));
+async function initializeFromCMS(){
   try {
-    const response = await fetch(currentLang === "en" ? "/content/site.en.json" : "/content/site.json", {cache:"no-cache"});
+    const response = await fetch("/content/site.json", {cache:"no-cache"});
     if(!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     applySiteSettings(data);
@@ -526,19 +565,12 @@ async function loadLanguage(lang){
     if(Array.isArray(data.members)) MEMBERS = data.members;
     applySectionOrder(data.section_order);
   } catch(error) {
-    console.warn(`Could not load content for language ${currentLang}; using built-in website content.`, error);
+    console.warn("Could not load content/site.json; using built-in website content.", error);
   }
   renderEvents();
   renderMembers();
   renderFilters();
   renderWorks();
-}
-$("#langToggle").addEventListener("click", () => {
-  const next = currentLang === "vi" ? "en" : "vi";
-  loadLanguage(next);
-});
-async function initializeFromCMS(){
-  await loadLanguage("vi");
 }
 
 initializeFromCMS();
