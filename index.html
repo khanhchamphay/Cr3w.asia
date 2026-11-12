@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>CR3W | Broadcast Identity Production</title>
+<title>CR3W | Independent Creative Production</title>
 <meta name="description" content="CR3W is an independent creative production collective operating its own analog-inspired broadcast channel. Independent images. Unfiltered stories.">
 <meta name="color-scheme" content="dark">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-/* ===== CR3W BROADCAST IDENTITY DESIGN SYSTEM ===== */
+/* ===== CR3W BROADCAST IDENTITY DESIGN SYSTEM (UPDATED HERO) ===== */
 :root {
   --base: #17232C;
   --signal-grey: #D9E0DF;
@@ -81,7 +81,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .brand-wordmark .brand-dot {
   font-family: var(--mono);
   font-size: 9px;
-  margin-left: 4px;
+  margin-left: 2px;
   color: var(--green);
 }
 .top nav {
@@ -102,15 +102,15 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .top nav a:hover { color: var(--bone); border-color: var(--green); }
 
-/* --- HERO CH.001 --- */
+/* --- HERO CH.001 (MATCHING NEW GRAPHIC) --- */
 .hero {
   position: relative;
   min-height: calc(100svh - 70px);
-  padding: clamp(40px, 8vw, 100px) var(--gutter);
+  padding: clamp(40px, 7vw, 90px) var(--gutter);
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1.15fr 0.85fr;
   align-items: center;
-  gap: clamp(30px, 5vw, 80px);
+  gap: clamp(30px, 5vw, 70px);
   border-bottom: 1px solid var(--line);
   overflow: hidden;
 }
@@ -136,7 +136,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   align-items: center;
   gap: 10px;
   color: var(--green);
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 .eyebrow-right { margin-left: auto; color: var(--mute); }
 .live-dot {
@@ -148,16 +148,16 @@ button { font: inherit; color: inherit; cursor: pointer; }
   box-shadow: 0 0 10px var(--green);
 }
 .hero h1 {
-  margin: 0 0 20px;
+  margin: 0 0 18px;
   font-family: var(--display);
-  font-weight: 500;
-  font-size: clamp(2.8rem, 6.2vw, 6rem);
-  line-height: 0.92;
+  font-weight: 600;
+  font-size: clamp(2.8rem, 5.8vw, 5.5rem);
+  line-height: 0.94;
   letter-spacing: -0.03em;
   text-transform: uppercase;
 }
 .hero h1 em { font-style: normal; color: var(--green); }
-.hero p { margin: 0 0 32px; max-width: 48ch; color: var(--mute); font-size: 1.02rem; }
+.hero p { margin: 0 0 28px; max-width: 46ch; color: var(--mute); font-size: 1rem; }
 .hero .actions { display: flex; flex-wrap: wrap; gap: 14px; }
 .btn {
   display: inline-flex;
@@ -174,23 +174,24 @@ button { font: inherit; color: inherit; cursor: pointer; }
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
 .btn:hover { background: var(--bone); color: var(--base); border-color: var(--bone); }
-.btn.solid { background: var(--green); border-color: var(--green); color: #17232C; }
+.btn.solid { background: var(--green); border-color: var(--green); color: #17232C; box-shadow: 0 0 20px rgba(85,214,208,0.3); }
 .btn.solid:hover { background: var(--bone); border-color: var(--bone); color: var(--base); }
 
 .hero-foot {
   display: flex;
   justify-content: space-between;
   gap: 18px;
-  margin-top: clamp(40px, 6vw, 70px);
-  padding-top: 16px;
+  margin-top: clamp(36px, 5vw, 60px);
+  padding-top: 14px;
   border-top: 1px solid var(--line);
   color: var(--mute);
   font-size: 10px;
 }
 
-/* --- CRT TELEVISION HERO VISUAL --- */
-.hero-visual { width: 100%; max-width: 540px; justify-self: end; }
+/* --- CRT TELEVISION HERO VISUAL (MATCHING NEW GRAPHIC) --- */
+.hero-visual { width: 100%; max-width: 540px; justify-self: end; display: flex; flex-direction: column; align-items: flex-end; }
 .crt-shell {
+  width: 100%;
   padding: 16px;
   background: linear-gradient(145deg, #3a4a54, #1c2a33 30%, #0d151a 85%);
   border: 1px solid rgba(217,224,223,0.25);
@@ -209,7 +210,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 .crt-screen {
   position: relative;
-  min-height: 380px;
+  min-height: 340px;
   border-radius: 42% / 12%;
   border: 10px solid #090e12;
   background: radial-gradient(ellipse at 50% 45%, #224d54 0%, #0e2028 55%, #050b0f 100%);
@@ -240,16 +241,15 @@ button { font: inherit; color: inherit; cursor: pointer; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
   text-align: center;
   padding: 20px;
 }
 .screen-logo {
-  width: min(60%, 220px);
+  width: min(65%, 210px);
   height: auto;
-  filter: drop-shadow(0 0 20px rgba(85,214,208,0.5));
+  filter: drop-shadow(0 0 18px rgba(85,214,208,0.6));
 }
-.screen-caption { color: var(--green); font-size: 11px; letter-spacing: 0.05em; }
 .screen-time { position: absolute; right: 18px; bottom: 12px; z-index: 3; color: rgba(233,231,222,0.5); font-size: 9px; }
 
 .crt-controls {
@@ -268,6 +268,29 @@ button { font: inherit; color: inherit; cursor: pointer; }
   background: radial-gradient(circle at 35% 30%, #8898a0, #1c2a33 70%);
   border: 1px solid rgba(217,224,223,0.3);
 }
+
+/* Tape stack element matching graphic */
+.tape-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 12px;
+  align-self: flex-end;
+}
+.tape-item {
+  background: #11181d;
+  border: 1px solid rgba(217,224,223,0.2);
+  padding: 5px 12px;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--bone);
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.tape-item span { color: var(--green); }
 
 /* --- SECTIONS GENERAL --- */
 section {
@@ -294,7 +317,7 @@ h2 {
 }
 .lede { margin: 10px 0 0; color: var(--mute); max-width: 54ch; font-size: 0.98rem; }
 
-/* --- SERVICES CH.002 (Warm White Band) --- */
+/* --- SERVICES CH.002 --- */
 .services-section {
   background: var(--bone);
   color: var(--base);
@@ -504,26 +527,26 @@ footer {
 <body>
 
 <header class="top">
-  <a class="brand-wordmark" href="#top">CR3W<span class="brand-dot">·</span><span>TV</span></a>
+  <a class="brand-wordmark" href="#top">CR3W<span class="brand-dot">®</span></a>
   <nav aria-label="Main Navigation">
-    <a href="#du-an" id="nav-works-text">Dự án</a>
-    <a href="#thanh-tich" id="nav-events-text">Thành tích</a>
-    <a href="#thanh-vien" id="nav-members-text">Thành viên</a>
-    <a href="#lien-he" id="nav-contact-text">Liên hệ</a>
+    <a href="#du-an" id="nav-works-text">Works</a>
+    <a href="#thanh-tich" id="nav-events-text">Services</a>
+    <a href="#thanh-vien" id="nav-members-text">The Crew</a>
+    <a href="#lien-he" id="nav-contact-text">Contact</a>
   </nav>
 </header>
 
 <main id="top">
   <div class="hero">
     <div class="hero-copy">
-      <div class="eyebrow"><span class="live-dot"></span> CH.001 / CREW BROADCAST <span class="eyebrow-right">HCMC · VIETNAM</span></div>
-      <h1 id="hero-title-text">WE MAKE<br><em>MOVING IMAGES.</em></h1>
-      <p id="hero-desc-text">Nhóm làm phim trẻ từ Đại học Hoa Sen. Chúng mình phát triển và sản xuất phim ngắn, TVC, MV — từ ý tưởng đến khung hình cuối cùng.</p>
+      <div class="eyebrow"><span class="live-dot"></span> 01 / POWER ON <span class="eyebrow-right">HCMC · VIETNAM</span></div>
+      <h1>WE MAKE<br><em>MOVING IMAGES.</em></h1>
+      <p>Independent images. Unfiltered stories.</p>
       <div class="actions">
-        <a class="btn solid" href="#du-an" id="hero-btn-primary">TUNE IN <span aria-hidden="true">↗</span></a>
-        <a class="btn" href="#lien-he" id="hero-btn-secondary">Liên hệ làm việc</a>
+        <a class="btn solid" href="#du-an">▶ TUNE IN <span aria-hidden="true">↗</span></a>
+        <a class="btn" href="#lien-he">WORK WITH US</a>
       </div>
-      <div class="hero-foot"><span>INDEPENDENT CREATIVE PRODUCTION</span><span>EST. 2022 — SIGNAL ACTIVE</span></div>
+      <div class="hero-foot"><span>BROADCASTING CREATIVE WORKS</span><span>FILM / TVC / MV / STUDENT FILM</span></div>
     </div>
     
     <div class="hero-visual" aria-label="CR3W Broadcast CRT monitor">
@@ -535,8 +558,7 @@ footer {
         <div class="crt-screen">
           <div class="screen-noise"></div>
           <div class="screen-content">
-            <img class="screen-logo" src="./images/logo crew-1.png" alt="CR3W mascot logo">
-            <div class="screen-caption" id="screen-caption-text">INDEPENDENT IMAGES<br>UNFILTERED STORIES</div>
+            <img class="screen-logo" src="./images/logo crew.png" alt="CR3W mascot logo">
           </div>
           <div class="screen-time">19:26:42</div>
         </div>
@@ -548,6 +570,10 @@ footer {
           <span>HCMC, VN</span>
           <span>BROADCAST ACTIVE</span>
         </div>
+      </div>
+      <div class="tape-stack">
+        <div class="tape-item">CR3W<span>ARCHIVE_01</span></div>
+        <div class="tape-item">TAPES_001<span>MASTER</span></div>
       </div>
     </div>
   </div>
@@ -630,7 +656,7 @@ footer {
   </section>
 </main>
 
-<footer id="footer-text">CREW® — Broadcasting creative works · Nhóm làm phim Đại học Hoa Sen · Est. 2022</footer>
+<footer id="footer-text">CR3W® — Broadcasting creative works · Nhóm làm phim Đại học Hoa Sen · Est. 2022</footer>
 
 <dialog id="dlg" aria-labelledby="dlgTitle">
   <button class="dlg-close" id="dlgClose" aria-label="Đóng">&times;</button>
@@ -641,48 +667,14 @@ footer {
 </dialog>
 
 <script>
-// --- JAVASCRIPT ĐỂ TỰ ĐỘNG TẢI DỮ LIỆU TỪ CMS (site.json) ---
+// --- JAVASCRIPT TỰ ĐỘNG TẢI DỮ LIỆU TỪ CMS (site.json) ---
 async function initSite() {
   try {
     let res = await fetch('./content/site.json');
     if (!res.ok) res = await fetch('content/site.json');
     const data = await res.json();
     
-    // Cập nhật văn bản cơ bản
     if (data.site_title) document.title = data.site_title;
-    if (data.hero_title) document.getElementById('hero-title-text').innerHTML = data.hero_title.replace('MOVING IMAGES.', '<em>MOVING IMAGES.</em>');
-    if (data.hero_description) document.getElementById('hero-desc-text').innerText = data.hero_description;
-    if (data.hero_primary_label) document.getElementById('hero-btn-primary').innerHTML = data.hero_primary_label + ' <span aria-hidden="true">↗</span>';
-    if (data.hero_secondary_label) document.getElementById('hero-btn-secondary').innerText = data.hero_secondary_label;
-    
-    if (data.nav_projects) document.getElementById('nav-works-text').innerText = data.nav_projects;
-    if (data.nav_events) document.getElementById('nav-events-text').innerText = data.nav_events;
-    if (data.nav_members) document.getElementById('nav-members-text').innerText = data.nav_members;
-    if (data.nav_contact) document.getElementById('nav-contact-text').innerText = data.nav_contact;
-
-    if (data.projects_heading) document.getElementById('h-du-an').innerText = data.projects_heading;
-    if (data.projects_description) document.getElementById('projects-desc-text').innerText = data.projects_description;
-    if (data.events_heading) document.getElementById('h-thanh-tich').innerText = data.events_heading;
-    if (data.events_description) document.getElementById('events-desc-text').innerText = data.events_description;
-    if (data.members_heading) document.getElementById('h-thanh-vien').innerText = data.members_heading;
-    if (data.members_description) document.getElementById('members-desc-text').innerText = data.members_description;
-    if (data.contact_heading) document.getElementById('h-lien-he').innerText = data.contact_heading;
-    if (data.contact_description) document.getElementById('contact-desc-text').innerText = data.contact_description;
-
-    if (data.contact_email) {
-      const mailEl = document.getElementById('contact-email-link');
-      mailEl.href = 'mailto:' + data.contact_email;
-      mailEl.innerText = data.contact_email;
-    }
-    if (data.contact_phone && data.contact_phone_href) {
-      const phoneEl = document.getElementById('contact-phone-link');
-      phoneEl.href = 'tel:' + data.contact_phone_href;
-      phoneEl.innerText = data.contact_phone;
-    }
-    if (data.contact_person) document.getElementById('contact-person-text').innerText = data.contact_person;
-    if (data.facebook_url) document.getElementById('contact-fb-link').href = data.facebook_url;
-    if (data.behance_url) document.getElementById('contact-behance-link').href = data.behance_url;
-    if (data.footer_text) document.getElementById('footer-text').innerText = data.footer_text;
 
     // --- RENDER WORKS (DỰ ÁN & BỘ LỌC) ---
     const works = data.works || [];
@@ -841,7 +833,7 @@ async function initSite() {
     membersContainer.innerHTML = '';
     members.forEach(m => {
       const article = document.createElement('article');
-      article.className = 'member';
+      article.className, 'member';
       article.innerHTML = `
         <h3>${m.n}</h3>
         <div class="roles">${m.r || ''}</div>
